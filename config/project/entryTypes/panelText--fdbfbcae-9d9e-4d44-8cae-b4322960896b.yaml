@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  7ed7fb97-1a9f-4303-bcfb-0d1e3d3cbaf3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-28T15:45:39+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fc98ab80-3f93-4ec4-b1b7-be4a5b25fd1e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-28T15:55:17+00:00'
+            elementCondition: null
+            fieldUid: 98de0a7d-6346-4ee5-bf70-c8b79372fcec # Text Block
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78067acf-f67d-4568-8da6-60e1a702c2d7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f22ae681-9cab-4036-aa95-e828e9662b6f
+        userCondition: null
+handle: panelText
+hasTitleField: true
+icon: ''
+name: 'Panel Text'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

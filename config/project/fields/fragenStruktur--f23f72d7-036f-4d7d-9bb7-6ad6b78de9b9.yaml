@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: fragenStruktur
+instructions: null
+name: 'Fragen Struktur'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 6dc30a04-80e3-40bb-8b7b-0ee9b7ffd170 # Frage
+  includeTableView: false
+  maxEntries: null
+  minEntries: 1
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

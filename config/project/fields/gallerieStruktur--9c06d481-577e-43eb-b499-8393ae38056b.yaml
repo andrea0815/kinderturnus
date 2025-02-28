@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: gallerieStruktur
+instructions: null
+name: 'Gallerie Struktur'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 86ab8989-426d-46d1-a492-96a3b7cd1266 # Tag
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

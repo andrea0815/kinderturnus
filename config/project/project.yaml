@@ -1,4 +1,4 @@
-dateModified: 1740752122
+dateModified: 1740759436
 email:
   fromEmail: base@left.studio
   fromName: master-project
@@ -36,49 +36,68 @@ meta:
   __names__:
     0c017e24-6889-49f0-bdd2-058a139c9f1d: Data # Data
     1d1e70bf-a278-465e-a64d-dfaa1661e193: Navigation # Navigation
+    2a6dc1b9-39fd-4acf-89c1-aee725a16ea1: Tags # Tags
+    2abac02a-f982-45e0-8602-ec1717790777: Programm # Programm
     3a3779ad-ff4a-43ac-9875-963dca20b4b7: Navigation # Navigation
     4c70ff1a-21c6-4f84-81e5-b339b02e6f0d: 'MA Card Title' # MA Card Title
     4f9ce81c-6377-48f1-8b5b-b5b2daefb9c1: 'Phone Number' # Phone Number
     5a93054a-9a30-4b95-873b-9ebec3115909: 'Privacy Policy' # Privacy Policy
     05c6e9dc-1fc7-46a8-bbee-2c8138640bd8: Bold # Bold
     5e0d7bb4-8904-49ac-ac02-07a8b46945db: 'Bold Italic' # Bold Italic
-    9cc3eba1-d7d2-478f-ab6d-57505ecbcd66: 'Card Example' # Card Example
+    6dc30a04-80e3-40bb-8b7b-0ee9b7ffd170: Frage # Frage
+    8b0afb5e-0f5f-4a7d-a74c-cfba0544f628: 'Panel Struktur' # Panel Struktur
+    9ac63a1b-d005-4321-a5ad-0e43d29a16eb: Datum # Datum
+    9c06d481-577e-43eb-b499-8393ae38056b: 'Gallerie Struktur' # Gallerie Struktur
     33ac218a-68d4-4791-a392-586037092766: 'Website Logo' # Website Logo
     36dca454-5bf3-422e-b397-abb58dda5bbc: Image # Image
     43dd2356-ba3d-4c0f-9dc7-ef6f8103a49c: Home # Home
-    50a058af-57fd-4784-a532-cdf609d93221: About # About
+    50a058af-57fd-4784-a532-cdf609d93221: FAQ # FAQ
+    59e03785-f7cd-489a-9b8d-ceda9fc54d3b: 'Panel Slider' # Panel Slider
+    62ce9183-44fc-4fe9-90f6-1ea33f0a24b2: 'Programm Struktur' # Programm Struktur
+    69e34e0b-51c3-439e-938b-842dbfce8695: 'Panel Bild' # Panel Bild
+    86ab8989-426d-46d1-a492-96a3b7cd1266: Tag # Tag
     89a65ca6-59b1-4161-a8ca-e27dc33a1765: 'Website Social Links' # Website Social Links
+    98de0a7d-6346-4ee5-bf70-c8b79372fcec: 'Text Block' # Text Block
     599c2594-7f7c-47e8-ab7f-5f15ea9d8f90: 'Textfield with Links' # Textfield with Links
+    718f00b8-561f-45ac-bb59-4388d3f0ddab: Antwort # Antwort
     731c4afc-3bf9-4c58-a826-7db0350cadfd: master-project # master-project
-    841c0af1-37d6-429d-a7d8-bbb2c21d8566: About # About
+    841c0af1-37d6-429d-a7d8-bbb2c21d8566: FAQ # FAQ
     861c6252-90ad-422d-b3bc-8eb31c71d798: Link # Link
     5228acaf-dbbf-4aac-b0b0-0c1c55e94b4a: 'Website Description' # Website Description
     5365ef59-c050-4702-82ab-876962749a48: 'Website Title' # Website Title
     7104f57b-112f-4c96-84cf-eda1c75fe796: Textfield # Textfield
     8319de11-8b0e-487f-83c2-5032ef70e346: Footer # Footer
+    8404cdb2-8675-4b1e-9efa-a7f9aab0c835: 'Slider Bilder' # Slider Bilder
     21950e08-1320-46dd-b9f3-8ddae1b3aa50: Images # Images
+    45623e24-32ca-4e88-8460-ce00e4ced169: kontakt # kontakt
     69307dd8-eb06-43e3-8188-b4df5b23d2e1: 'Image 800x' # Image 800x
-    84547fdc-05c1-4c3c-a280-9b7fb6166e32: 'Card Example' # Card Example
     94105fd8-47a5-4c58-9ac1-b9bdc86ac4e4: 'Image Gallery' # Image Gallery
     1795220b-e9cf-41e2-814d-8c93f5dd0e30: 'External Link URL' # External Link URL
     5416109a-5864-4bdf-9179-ee951c51cfd8: Email # Email
     59142390-27d0-4780-8543-5bcfbef4549e: 'External Link Name' # External Link Name
     a2cae9f8-a8d7-4405-bb16-8546f16f6e4c: Text # Text
+    b6e85c3e-b3d9-490e-b963-a75e318a9eb9: 'Programm Punkt' # Programm Punkt
     bebc23d5-2d50-4499-ae0d-6aa66437be5e: Copyright # Copyright
     becfe5ca-3a1d-4962-8fc7-30c4caf3a387: 'Bold Link' # Bold Link
+    bf3aab47-1657-4bec-965e-cff914507420: 'Panel Tags' # Panel Tags
     c3b49286-4ca2-4801-9d33-2a3e31e1807d: Home # Home
+    c6f6306c-233c-4367-bae6-ef94f49a66b9: Tags # Tags
     c26a36f0-36c6-42c0-99e0-aa0b4303441c: 'Image 1600x' # Image 1600x
-    c69f0277-c48d-451a-84c1-2b4423aff544: Imprint # Imprint
+    c69f0277-c48d-451a-84c1-2b4423aff544: Gallerie # Gallerie
     c24954e3-8320-487b-87ac-8923abad84c2: Thumbnail # Thumbnail
     c68104aa-08f5-44a5-a8c0-8aca3fba89eb: General # General
     c88814b8-0f99-4d11-9c11-745f4bcc5468: 'Public Schema' # Public Schema
+    c924919a-b86f-4400-becc-657611647d2b: Frage # Frage
     ccff5e66-8f82-4233-a6da-2adaf6c97ced: Italic # Italic
     ce490459-dc63-4854-810e-ff2762981c6f: Videos # Videos
     da87989f-6fba-4fb3-afae-2501b651f019: 'Alt Text' # Alt Text
+    ddb8a1fa-2240-4fd0-a81b-0fe44b227399: Kontakt # Kontakt
     de666abc-e71d-43e3-b318-cc6d8044b6b9: master-project # master-project
     e65df9b6-f654-4750-b847-46e355ec1c39: 'Website Contact' # Website Contact
-    e414d637-e54f-4359-9cf8-cd94185009c4: Imprint # Imprint
+    e414d637-e54f-4359-9cf8-cd94185009c4: Gallerie # Gallerie
     f0d61459-f155-4f36-a8ba-74cafea22385: 'Website Privacy Policy' # Website Privacy Policy
+    f23f72d7-036f-4d7d-9bb7-6ad6b78de9b9: 'Fragen Struktur' # Fragen Struktur
+    fdbfbcae-9d9e-4d44-8cae-b4322960896b: 'Panel Text' # Panel Text
 plugins:
   ckeditor:
     edition: standard

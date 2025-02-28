@@ -1,0 +1,83 @@
+color: null
+fieldLayouts:
+  a60fae7b-8e1d-49ef-a10b-e594a002b7c0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-28T16:06:49+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8a441bd0-93d1-4afa-998a-c46bf3216129
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-28T16:06:49+00:00'
+            elementCondition: null
+            fieldUid: 98de0a7d-6346-4ee5-bf70-c8b79372fcec # Text Block
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: daff5f7f-ae6a-45b0-bd59-2466eab1879a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-28T16:06:03+00:00'
+            elementCondition: null
+            fieldUid: 62ce9183-44fc-4fe9-90f6-1ea33f0a24b2 # Programm Struktur
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 015ac428-b885-4b1a-9d9a-ef29f869c1dd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5c7e6755-54df-4b36-a573-d0848e16a737
+        userCondition: null
+handle: programm
+hasTitleField: true
+icon: ''
+name: Programm
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

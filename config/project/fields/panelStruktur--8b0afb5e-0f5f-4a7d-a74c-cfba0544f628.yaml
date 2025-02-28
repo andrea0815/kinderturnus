@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: panelStruktur
+instructions: null
+name: 'Panel Struktur'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - fdbfbcae-9d9e-4d44-8cae-b4322960896b # Panel Text
+    - 69e34e0b-51c3-439e-938b-842dbfce8695 # Panel Bild
+    - 59e03785-f7cd-489a-9b8d-ceda9fc54d3b # Panel Slider
+    - bf3aab47-1657-4bec-965e-cff914507420 # Panel Tags
+    - 2abac02a-f982-45e0-8602-ec1717790777 # Programm
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

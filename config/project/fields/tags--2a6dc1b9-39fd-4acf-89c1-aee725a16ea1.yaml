@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: tags
+instructions: null
+name: Tags
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - c6f6306c-233c-4367-bae6-ef94f49a66b9 # Tags
+  includeTableView: false
+  maxEntries: null
+  minEntries: 2
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

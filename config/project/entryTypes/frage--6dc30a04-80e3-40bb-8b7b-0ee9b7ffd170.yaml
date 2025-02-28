@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  7fc16f2e-88c2-44de-990b-d939a583e834:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-28T16:11:26+00:00'
+            elementCondition: null
+            fieldUid: c924919a-b86f-4400-becc-657611647d2b # Frage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65df8ae6-a0ed-4248-acca-2bf1f43f7397
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-28T16:11:26+00:00'
+            elementCondition: null
+            fieldUid: 718f00b8-561f-45ac-bb59-4388d3f0ddab # Antwort
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e89485d-8ba9-43a7-be7b-d88063d37017
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 469f2b8b-32d9-4c18-9f10-dfac3b1c2f6d
+        userCondition: null
+handle: frage
+hasTitleField: false
+icon: ''
+name: Frage
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: ''
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

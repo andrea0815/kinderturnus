@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: programmStruktur
+instructions: null
+name: 'Programm Struktur'
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    - b6e85c3e-b3d9-490e-b963-a75e318a9eb9 # Programm Punkt
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
