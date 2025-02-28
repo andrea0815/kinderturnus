@@ -1,0 +1,1 @@
+import utilClass from 'path/to/script';

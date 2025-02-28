@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: textfieldWithLinks
+instructions: null
+name: 'Textfield with Links'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 861c6252-90ad-422d-b3bc-8eb31c71d798 # Link
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

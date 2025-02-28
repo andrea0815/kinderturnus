@@ -1,0 +1,1 @@
+2025-02-26 23:43:51 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":3692720} 

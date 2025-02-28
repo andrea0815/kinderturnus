@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: websiteDescription
+instructions: null
+name: 'Website Description'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: 05c6e9dc-1fc7-46a8-bbee-2c8138640bd8 # Bold
+  createButtonLabel: null
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

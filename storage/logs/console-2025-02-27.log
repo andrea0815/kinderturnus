@@ -1,0 +1,102 @@
+2025-02-26 23:43:51 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185360} 
+2025-02-26 23:52:05 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185512} 
+2025-02-26 23:52:36 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185416} 
+2025-02-26 23:52:36 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: users/list in /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('list', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('list', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('list', Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('list', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('users/list', Array)
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/list', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/list', Array)
+#7 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#9 /var/www/html/craft(13): yii\base\Application->run()
+#10 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "users/list". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/list', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/list', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3425856,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"users/list\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request: users/list at /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149)"} 
+2025-02-26 23:53:35 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185416} 
+2025-02-26 23:54:08 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185416} 
+2025-02-26 23:54:08 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: users/list in /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('list', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('list', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('list', Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('list', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('users/list', Array)
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/list', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/list', Array)
+#7 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#9 /var/www/html/craft(13): yii\base\Application->run()
+#10 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "users/list". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/list', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/list', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3425856,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"users/list\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request: users/list at /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149)"} 
+2025-02-26 23:54:39 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185424} 
+2025-02-26 23:59:04 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185520} 
+2025-02-26 23:59:04 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: users/change-email in /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('change-email', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('change-email', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('change-email', Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('change-email', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('users/change-em...', Array)
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/change-em...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/change-em...', Array)
+#7 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#9 /var/www/html/craft(13): yii\base\Application->run()
+#10 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "users/change-email". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/change-em...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/change-em...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3426368,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"users/change-email\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request: users/change-email at /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149)"} 
+2025-02-27 00:09:53 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185512} 
+2025-02-27 00:09:53 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":4663952} 
+2025-02-27 00:12:34 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2185504} 
+2025-02-27 00:12:34 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request: users/set-username in /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction('set-username', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/ControllerTrait.php(88): yii\console\Controller->runAction('set-username', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Controller.php(216): craft\console\Controller->traitRunAction('set-username', Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(552): craft\console\Controller->runAction('set-username', Array)
+#4 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('users/set-usern...', Array)
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/set-usern...', Array)
+#6 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/set-usern...', Array)
+#7 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#8 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#9 /var/www/html/craft(13): yii\base\Application->run()
+#10 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "users/set-username". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('users/set-usern...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('users/set-usern...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3426352,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"users/set-username\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request: users/set-username at /var/www/html/vendor/yiisoft/yii2/base/Controller.php:149)"} 

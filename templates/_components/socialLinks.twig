@@ -1,0 +1,15 @@
+{% if globalsGeneral.websiteSocialLinks|length %}
+
+	<ul
+		class="website-social-links">
+		{% for socialLink in globalsGeneral.websiteSocialLinks %}
+			<li>
+				<a
+					href="{{socialLink.url}}" target="_blank">
+					{{socialLink.name}}
+				</a>
+			</li>
+		{% endfor %}
+
+	</ul>
+{% endif %}

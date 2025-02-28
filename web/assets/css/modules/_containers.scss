@@ -1,0 +1,15 @@
+@use '../utilities/utilities' as util;
+
+header {
+    padding: util.$space-3;
+}
+
+footer {
+    @include util.flex-row(space-between, center);
+    padding: util.$space-3;
+
+    .website-social-links {
+        @include util.flex-row(space-between, center);
+        gap: util.$gap-2;
+    }
+}

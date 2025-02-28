@@ -1,0 +1,77 @@
+@use 'variables' as var;
+
+// SIZING
+
+@mixin size-full-screen($position: inherit) {
+    width: 100vw;
+    height: 100dvh;
+    position: $position;
+    overflow: hidden;
+}
+
+// FLEX
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row($justify, $align) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex-column($justify, $align) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex-center($direction: column) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+// IMAGE 
+
+@mixin img-size($width, $height, $fit) {
+width: $width;
+height: $height;
+object-fit: $fit;
+object-position: center;
+}
+
+// ANIMATION
+
+@mixin animation($name: none, $duration: var.$timing-default) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}

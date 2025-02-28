@@ -1,0 +1,51 @@
+@use '../utilities/utilities' as util;
+
+$padding: util.$space-2 util.$space-3;
+$width: 100%;
+
+@mixin inputGeneral {
+    width: $width;
+    display: block;
+    background-color: transparent;
+    border: util.$outline-m;
+    padding: $padding;
+    margin-bottom: util.$space-4;
+}
+
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+
+  transition: all .2s ease-in-out;
+}
+
+input {
+    @include inputGeneral;
+
+    &[type="radio"], &[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        border: util.$outline-m;
+        border-radius: util.$radius-1; /* Apply a small border radius */
+        background-color: transparent;
+
+        &:checked {
+    background-color: util.$color-primary; /* Optional: Highlight when checked */
+    border-color: util.$color-primary;
+  }
+    }
+
+    &:focus {
+        border-color: util.$color-primary;
+   
+    }
+}
+
+textarea {
+    @include inputGeneral;
+}

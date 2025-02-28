@@ -1,0 +1,17 @@
+<footer>
+	{% if globalsNav.footer|length %}
+		<ul>
+			{% for footerItem in globalsNav.footer %}
+				<li>
+					<a
+						href="{{footerItem.url}}">
+						{{footerItem.title}}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+
+	{% include "_components/socialLinks.twig" %}
+
+</footer>

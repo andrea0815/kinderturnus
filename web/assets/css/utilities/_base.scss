@@ -1,0 +1,86 @@
+@use 'variables' as var;
+@use 'utility-classes' as util;
+@use "sass:color";
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var.$text-size-default;
+    font-family: var.$font-2;
+    text-decoration: none;
+    color: var.$color-black;
+
+    // outline: 1px solid green; // ENABLE FOR DEBUGGING OVERFLOW
+}
+
+// TYPO
+
+h1, h2, h3, h4, h5 {
+    font-size: var.$text-size-h1;
+    font-family: var.$font-1;
+    color: var.$color-primary;
+}
+
+// LISTS
+
+ul,ol {
+    list-style: none; 
+    padding: 0;    
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+}
+
+// BUTTONS
+
+button {
+  all: unset; 
+  display: inline-block; 
+  cursor: pointer; 
+  background-color: var.$color-primary;
+  color: var.$color-white;
+  padding: var.$space-3 var.$space-4;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    background-color: color.scale(var.$color-primary, $lightness: -20%);
+  }
+}
+
+// CONTAINERS 
+
+nav {
+    ul {
+        @include util.flex-row(center, space-between); /* Accessing the mixin through namespace */
+        gap: var.$gap-3;
+    }
+}
+
+// ANIMATIONS 
+
+h1, h2, h3, h4, h5, p {
+    @include util.animation(fade-in-top, var.$timing-1000);
+}
+
+// LOADER
+
+.loader {
+    background-color: var.$color-white;
+    z-index: 100;
+    @include util.size-full-screen(fixed);
+    @include util.flex-center;
+    @include util.animation($name: none, $duration: var.$timing-500);
+}
+
+.logo {
+    width: var.$logo-size;
+    height: var.$logo-size;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}

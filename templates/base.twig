@@ -1,0 +1,73 @@
+{% set globalsGeneral = craft.app.globals().getSetByHandle('general') %}
+{% set globalsNav = craft.app.globals().getSetByHandle('navigation') %}
+{% set globalsPrivacy = craft.app.globals().getSetByHandle('privacyPolicy') %}
+
+<!DOCTYPE html>
+<html
+	lang="{{ craft.app.language }}">
+	<head>
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"/>
+		<meta
+			charset="utf-8"/>
+		<meta
+			name="language"
+			content="{{ craft.app.language }}"/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"/>
+		<meta
+			http-equiv="content-type"
+			content="text/html; charset=utf-8"/>
+		<meta
+			name="description"
+			{% if globalsGeneral.websiteDescription|length %} content="{{globalsGeneral.websiteDescription}}"/>
+	{% endif %}
+	<meta
+		name="referrer"
+		content="origin-when-cross-origin"/>
+	<meta
+		name="author"
+		content="..."/>
+	<meta
+		name="publisher"
+		content="..."/>
+	<meta
+		name="copyright"
+		content="..."/>
+	<meta
+		name="designer"
+		content="..."/>
+	<meta
+		name="programmer"
+		content="left.studio"/>
+	<meta
+		name="keywords"
+		content="..."/>
+
+	{% if entry is defined and entry.url != siteUrl %}
+		<title>
+			{{entry.title}}
+			–
+			{{globalsGeneral.websiteTitle}}
+		</title>
+	{% else %}
+		<title>
+			{{globalsGeneral.websiteTitle}}
+		</title>
+	{% endif %}
+
+	{% include '_utilities/favicon.twig' %}
+	{% include '_utilities/stylesheets.twig' %}
+</html></head><body>
+{% include '_components/loader.twig' %}
+{% block bodyblock %}
+	{# All Pages go here #}
+{% endblock %}
+<script
+	type="module"
+	src="{{alias('@web')}}/assets/js/main.js"></script>
+{% block scriptblock %}
+	{# General scripts #}
+{% endblock %}</body></html>

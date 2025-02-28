@@ -1,0 +1,14 @@
+<nav>
+	{% if globalsNav.navigation|length %}
+		<ul>
+			{% for navItem in globalsNav.navigation %}
+				<li>
+					<a
+						href="{{navItem.url}}">
+						{{navItem.title}}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+</nav>

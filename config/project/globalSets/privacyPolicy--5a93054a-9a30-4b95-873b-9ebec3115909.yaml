@@ -1,0 +1,28 @@
+fieldLayouts:
+  ce560dbe-3fac-488d-ae0d-a4d4e591a846:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-11-21T11:21:15+00:00'
+            elementCondition: null
+            fieldUid: f0d61459-f155-4f36-a8ba-74cafea22385 # Website Privacy Policy
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64fb395e-4c26-4cb7-a276-d74762f52393
+            userCondition: null
+            warning: null
+            width: 100
+        name: Cookies
+        uid: cab63d02-41ef-4960-a069-c92a1bba0e60
+        userCondition: null
+handle: privacyPolicy
+name: 'Privacy Policy'
+sortOrder: 3
