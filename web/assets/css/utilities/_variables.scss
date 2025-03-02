@@ -1,13 +1,11 @@
-@use 'fonts' as fonts;
+@use 'fonts' as f;
 
 // LOGO
-$logo-size: 70px;
+$logo-size: 180px;
 
 // COLORS
 
-// main
-
-$color-black: rgb(27, 27, 27); 
+$color-black: rgb(56, 52, 45); 
 $color-white: rgb(255, 255, 255);
 
 $color-black-30: rgba($color-black, 0.3);
@@ -18,41 +16,27 @@ $color-white-30: rgba($color-white, 0.3);
 $color-white-50: rgba($color-white, 0.5);
 $color-white-70: rgba($color-white, 0.7);
 
-$color-primary: rgb(81, 0, 255);
-$color-on-primary: rgb(55, 0, 173);
+$color-red: #C62E3C;
+$color-red-70: rgba(198, 46, 61, 0.7);
+$color-red-50: rgba(198, 46, 61, 0.5);
 
-$color-secondary: rgb(198, 210, 95);
-$color-on-secondary: rgb(148, 157, 71);
-
-$color-tertiary: rgb(99, 146, 175);
-$color-on-tertiary: rgb(67, 99, 118);
-
-$color-accent-1: rgb(101, 138, 46);
-$color-accent-2: rgb(200, 178, 35);
-$color-accent-3: rgb(154, 79, 154);
-$color-accent-4: rgb(181, 89, 58);
-
+$color-sand: #F8F2E4;
+$color-sand-dark: #F1E9D5;
 
 // colors applied
 
-$color-background: $color-on-primary;
-$color-surface: $color-white;
-
-// FONTS
-
-$font-1: fonts.$Roboto;
-$font-2: fonts.$Roboto;
-$font-3: fonts.$Roboto;
+$color-background: $color-sand;
+$color-surface: $color-white-50;
 
 // TEXT SIZES
 
 $text-size-default: 16px;
 
 $text-size-h1: 2.5rem;
-$text-size-h2: 2rem;
-$text-size-h3: 2rem;
-$text-size-h4: 1.5rem;
-$text-size-h5: 1.5rem;
+$text-size-h2: 1.5rem;
+$text-size-h3: 1.2rem;
+$text-size-h4: 1.2rem;
+$text-size-h5: 1rem;
 
 $text-size-copy-xs: .6rem;
 $text-size-copy-s: .8rem;
@@ -60,12 +44,17 @@ $text-size-copy-m: 1rem;
 $text-size-copy-l: 1.4rem;
 $text-size-copy-xl: 1.8rem;
 
+$line-height-s: 1.4;
+
+$font-default: f.$Dosis;
+
 // SPACES
 
 $space-1: 2px;
 $space-2: 5px;
 $space-3: 10px;
 $space-4: 20px;
+$space-4-5: 30px;
 $space-5: 50px;
 $space-6: 70px;
 $space-7: 100px;
@@ -88,8 +77,9 @@ $outline-l: $color-black-50 3px solid;
 // BORDER RADIUS
 
 $radius-1: 3px;
-$radius-2: 10px;
 $radius-round: 50%;
+$radius-2: 15px;
+$radius-3: 50px;
 
 // TIMING
 

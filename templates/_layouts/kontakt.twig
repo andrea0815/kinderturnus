@@ -3,9 +3,9 @@
 {% block bodyblock %}
 	{% include "_modules/header.twig" %}
 
-	<h1>
-		Kontakt
-	</h1>
+	{% if entry.title|length %}
+		<h2>{{ entry.title }}</h2>
+	{% endif %}
 
 	{% include "_modules/footer.twig" %}
 

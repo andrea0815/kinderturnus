@@ -4,14 +4,30 @@
 
 	{% include "_modules/header.twig" %}
 
-	<h1>
-		Imprint
-	</h1>
+	{% if entry.title|length %}
+		<h2>{{ entry.title }}</h2>
+	{% endif %}
 
-	{% include "_modules/footer.twig" %}
+	{% if entry.fragenStruktur|length %}
+		<div class="faq-container">
+			{% for frage in entry.fragenStruktur %}
+				<div class="panel frage">
+					{% if frage.frage|length %}
+						<h3 class="faq-question">{{ frage.frage }}</h3>
+					{% endif %}
+
+					{% if frage.antwort|length %}
+						<p class="faq-answer">{{ frage.antwort|striptags }}</p>
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	{% else %}
+		<p>Keine Fragen vorhanden.</p>
+	{% endif %}
 
 {% endblock %}
 
 {% block scriptblock %}
-
+	<script src="{{ siteUrl('assets/js/utilities/accordion.js') }}"></script>
 {% endblock %}

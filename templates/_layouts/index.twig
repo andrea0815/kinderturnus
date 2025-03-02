@@ -3,12 +3,119 @@
 {% block bodyblock %}
 	{% include "_modules/header.twig" %}
 
-	<main
-		class="flex-center flex-col">
-		<h1>
-			Landing Page
-		</h1>
+	<main class="flex-center flex-col">
 
+		{% if entry.panelStruktur|length %}
+			{% for panel in entry.panelStruktur %}
+
+				{% if panel.type == "panelSlider" %}
+					<div class="panel" id="panel-slider">
+
+						{% include "_components/slider.twig" %}
+
+						<div>
+							{% if panel.title|length %}
+								<h2>
+									{{ panel.title }}
+								</h2>
+							{% endif %}
+							{% if panel.textBlock|length %}
+								<p class="column-2">
+									{{ panel.textBlock|striptags }}
+								</p>
+							{% endif %}
+						</div>
+					</div>
+				{% elseif panel.type == "panelTags" %}
+					<div class="panel" id="panel-tags">
+						{% if panel.title|length %}
+							<h2>
+								{{ panel.title|striptags }}
+							</h2>
+						{% endif %}
+						{% if panel.textBlock|length %}
+							<p class="column-2">
+								{{ panel.textBlock|striptags }}
+							</p>
+						{% endif %}
+
+
+						<div class="tag-container">
+							{% if panel.tagFrage|length %}
+								<h3>
+									{{ panel.tagFrage|striptags }}
+								</h3>
+							{% endif %}
+							{% if panel.tags|length %}
+								<ul>
+									{% for tag in panel.tags %}
+										<li class="tag-item">
+											{% if tag.text|length %}
+												{{ tag.text }}
+											{% endif %}
+										</li>
+									{% endfor %}
+								</ul>
+							{% endif %}
+						</div>
+
+					</div>
+				{% elseif panel.type == "panelBild" %}
+					<div class="panel" id="panel-bild">
+						<div>
+							{% if panel.title|length %}
+								<h2>
+									{{ panel.title }}
+								</h2>
+							{% endif %}
+							{% if panel.textBlock|length %}
+								<p>
+									{{ panel.textBlock|striptags }}
+								</p>
+							{% endif %}
+						</div>
+						{% if panel.image|length %}
+							{% set image = panel.image.one %}
+							<div class="img-container">
+								<img src="{{ image.getUrl() }}" alt="{{ image.altText }}" class="img-rounded">
+							</div>
+						{% endif %}
+					</div>
+				{% elseif panel.type == "programm" %}
+					<div class="panel" id="programm">
+						{% if panel.title|length %}
+							<h2>
+								{{ panel.title }}
+							</h2>
+						{% endif %}
+						{% if panel.textBlock|length %}
+							<p class="column-2">
+								{{ panel.textBlock|striptags }}
+							</p>
+						{% endif %}
+
+						{% if panel.programmStruktur|length %}
+							<ul>
+								{% for punkt in panel.programmStruktur %}
+									<li class="programm-item">
+										{% if punkt.image|length %}
+											{% set image = punkt.image.one %}
+											<img src="{{ image.getUrl() }}" alt="{{ image.altText }}">
+										{% endif %}
+										{% if punkt.textBlock|length %}
+											{{ punkt.textBlock }}
+										{% endif %}
+									</li>
+								{% endfor %}
+							</ul>
+						{% endif %}
+
+					</div>
+				{% endif %}
+
+
+			{% endfor %}
+		{% endif %}
 	</main>
 
 
@@ -16,7 +123,8 @@
 
 
 {% endblock %}
-
 {% block scriptblock %}
-
+<script
+		type="module"
+		src="{{alias('@web')}}/assets/js/utilities/slider.js"></script>
 {% endblock %}

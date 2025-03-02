@@ -1,0 +1,74 @@
+@use '../utilities/utilities' as u;
+
+#programm {
+    ul {
+        @include u.flex-column(space-between, center);
+        gap: u.$space-4;
+        margin-top: u.$space-5;
+
+        .programm-item {
+            @include u.flex-row(space-between, center);
+            gap: u.$space-4;
+            background-color: u.$color-sand-dark;
+            border-radius: u.$radius-2;
+            padding: u.$space-4;
+            transition: all .2s ease-in-out;
+
+
+            &:hover {
+                background-color: u.$color-sand;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+
+        }
+
+
+    }
+}
+
+#panel-bild {
+    @include u.flex-row(start, stretch);
+    gap: u.$space-4-5;
+
+    &>* {
+        flex: 1;
+    }
+
+    .img-container {
+        @include u.img-rounded();
+        overflow: hidden;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.tag-container {
+    margin-top: u.$space-4-5;
+
+    ul {
+        margin-top: u.$space-4-5;
+        li {
+            display: inline-block;
+            margin-right: u.$space-3;
+            margin-bottom: u.$space-4;
+            padding: u.$space-3 u.$space-4;
+            background-color: u.$color-sand-dark;
+            border-radius: u.$radius-3;
+            transition: all .2s ease-in-out;
+            font-weight: 600;
+
+            &:hover {
+                background-color: u.$color-sand;
+            }
+        }
+    }
+
+}

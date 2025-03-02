@@ -75,3 +75,7 @@ object-position: center;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
+@mixin img-rounded() {
+    border-radius: var.$radius-2;
+}

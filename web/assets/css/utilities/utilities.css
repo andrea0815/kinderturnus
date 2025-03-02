@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -32,15 +33,15 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Dosis";
   text-decoration: none;
-  color: rgb(27, 27, 27);
+  color: rgb(56, 52, 45);
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5 {
-  font-size: 2.5rem;
-  font-family: "Roboto";
-  color: rgb(81, 0, 255);
+  font-family: "Dosis";
+  color: #C62E3C;
 }
 
 ul, ol {
@@ -53,29 +54,27 @@ a {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 button {
   all: unset;
   display: inline-block;
   cursor: pointer;
-  background-color: rgb(81, 0, 255);
+  background-color: #C62E3C;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
 }
 button:hover {
-  background-color: #4100cc;
+  background-color: #9e2530;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-between;
-  /* Accessing the mixin through namespace */
-  gap: 15px;
-}
-
-h1, h2, h3, h4, h5, p {
+h2, h3, h4, h5, p {
   animation-name: fade-in-top;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -100,8 +99,10 @@ h1, h2, h3, h4, h5, p {
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  transform: translate(-110%, -35%);
 }
 .logo img {
   width: 100%;
@@ -203,4 +204,37 @@ h1, h2, h3, h4, h5, p {
     opacity: 0;
     transform: translateY(100%);
   }
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.column-2 {
+  -moz-column-count: 2;
+       column-count: 2;
 }/*# sourceMappingURL=utilities.css.map */

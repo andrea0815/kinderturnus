@@ -16493,3 +16493,545 @@ $_SERVER = [
     'CRAFT_WEB_ROOT' => '/var/www/html/web'
     'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site'
 ] {"environment":"dev","userId":1} 
+2025-02-28 15:02:21 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":822888} 
+2025-02-28 15:02:21 [queue.INFO] [yii\web\Session::open] Session started {"memory":1164184} 
+2025-02-28 15:02:21 [queue.INFO] [nystudio107\codeeditor\CodeEditor::bootstrap] CodeEditor module bootstrapped {"memory":1203744} 
+2025-02-28 15:02:21 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":1652856} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [452] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":1710888} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [452] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.015s) {"memory":2028608} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [453] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2035904} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [453] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.007s) {"memory":2097672} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [454] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2104968} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [454] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.010s) {"memory":2170832} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [455] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2178128} 
+2025-02-28 15:02:21 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [455] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.014s) {"memory":2239896} 
+2025-02-28 15:02:21 [queue.INFO] [application] Request context:
+$_GET = [
+    'p' => 'admin/actions/queue/run'
+    'v' => '1740783741596'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '6d36deeeac1e09a51631a0533eb7975a_username' => '89300f1b166de936133172cdba6807a6fc692d2384c1227898d037106a5ef286a:2:{i:0;s:41:\"6d36deeeac1e09a51631a0533eb7975a_username\";i:1;s:5:\"admin\";}'
+    'Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar' => 'expanded'
+    'Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar-details' => 'expanded'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'CraftSessionId' => '4e616d8182b7819bbd5927cbfd2862c2'
+    '6d36deeeac1e09a51631a0533eb7975a_identity' => '3ffca98b09d7f4e7ffcd953a143629214598c63e0cb5a6b637ee107b5dfcda1ea:2:{i:0;s:41:\"6d36deeeac1e09a51631a0533eb7975a_identity\";i:1;s:159:\"[1,\"[\\\"riSQ-40Dk62KiIJyZmsWaAa5lo7MtfSyhUocTNQgY2KeeDivKupZdWo7lEFfsDmzZrUjI_DY96HPodNcnQsLBrFiCkcRDz7pyczs\\\",null,\\\"b801d494f122793b0612636bfa234b9c\\\"]\",3600]\";}'
+]
+
+$_SESSION = [
+    '64ef28d2f38eee3fca648436bff9332f__flash' => []
+    '6d36deeeac1e09a51631a0533eb7975a__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '6d36deeeac1e09a51631a0533eb7975a__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '6d36deeeac1e09a51631a0533eb7975a__expire' => 1740787341
+    '__duration' => 3600
+    '__elevated_timeout' => 1740784037
+    '64ef28d2f38eee3fca648436bff9332f__auth_access' => [
+        0 => 'saveAssets:21950e08-1320-46dd-b9f3-8ddae1b3aa50'
+        1 => 'previewElement:2'
+    ]
+]
+
+$_SERVER = [
+    'DEPLOY_NAME' => 'local'
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm'
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm'
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0'
+    'IS_DDEV_PROJECT' => 'true'
+    'PHP_DEFAULT_VERSION' => '8.2'
+    'HOSTNAME' => 'kinderturnus-web'
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025'
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket'
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem'
+    'DOCKER_IP' => '127.0.0.1'
+    'PGPASSWORD' => 'db'
+    'MYSQL_PWD' => 'db'
+    'DDEV_DOCROOT' => 'web'
+    'PWD' => '/var/www/html'
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0'
+    'DDEV_FILES_DIR' => ''
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf'
+    'PHP_INI' => '/etc/php/8.2/fpm/php.ini'
+    'GOARCH' => 'arm64'
+    'DDEV_VERSION' => 'v1.23.5'
+    'TZ' => 'Europe/Amsterdam'
+    'HTTPS_EXPOSE' => '443:80,8026:8025'
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack'
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site'
+    'LINES' => '13'
+    'DDEV_SITENAME' => 'kinderturnus'
+    'HOME' => '/home/andreawindisch'
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site'
+    'LANG' => 'C.UTF-8'
+    'COLUMNS' => '106'
+    'DDEV_MUTAGEN_ENABLED' => 'true'
+    'PGUSER' => 'db'
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache'
+    'DDEV_ROUTER_HTTP_PORT' => '80'
+    'COMPOSER_PROCESS_TIMEOUT' => '2000'
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf'
+    'DDEV_FILES_DIRS' => ''
+    'HTTP_EXPOSE' => '80:80,8025:8025'
+    'NVM_DIR' => '/home/andreawindisch/.nvm'
+    'DDEV_PHP_VERSION' => '8.2'
+    'DDEV_TLD' => 'ddev.site'
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site'
+    'DDEV_PROJECT' => 'kinderturnus'
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site'
+    'TERM' => 'xterm'
+    'USER' => 'andreawindisch'
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history'
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d'
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert'
+    'SHLVL' => '1'
+    'COMPOSER_ALLOW_SUPERUSER' => '1'
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc'
+    'DDEV_DATABASE' => 'mysql:8.0'
+    'PGDATABASE' => 'db'
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof'
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer'
+    'DDEV_XDEBUG_ENABLED' => 'false'
+    'DDEV_DATABASE_FAMILY' => 'mysql'
+    'PGHOST' => 'db'
+    'DDEV_COMPOSER_ROOT' => '/var/www/html'
+    'DOCROOT' => 'web'
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1'
+    'PATH' => '~/bin:/var/www/html/vendor/bin:~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin:/var/www/html/bin'
+    'HOST_DOCKER_INTERNAL_IP' => ''
+    'DDEV_PROJECT_TYPE' => 'craftcms'
+    'DEBIAN_FRONTEND' => 'noninteractive'
+    'DDEV_ROUTER_HTTPS_PORT' => '443'
+    'GOOS' => 'darwin'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_REGISTERED_JS_FILES' => ''
+    'HTTP_X_REGISTERED_ASSET_BUNDLES' => '92d8701,22e517a2,aee7f8dc,e505ffd6,6b4d7555,bb2f10a0,e5e48399,815d39ea,fc0bc163,1ccab40d,1e21896b,54698ee0,b842675b,1c3c9add,4b1fd285,d8d08e47,8f00ce04,8768f48b,cf3018d6,e7c1329,7b7669ac,9f64c09b'
+    'HTTP_X_REAL_IP' => '172.17.0.1'
+    'HTTP_X_FORWARDED_SERVER' => '7c1a8a2adc53'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_FORWARDED_PORT' => '80'
+    'HTTP_X_FORWARDED_HOST' => 'kinderturnus.ddev.site'
+    'HTTP_X_FORWARDED_FOR' => '172.17.0.1'
+    'HTTP_X_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'HTTP_REFERER' => 'http://kinderturnus.ddev.site/admin/entries/home/2-home'
+    'HTTP_ORIGIN' => 'http://kinderturnus.ddev.site'
+    'HTTP_COOKIE' => '6d36deeeac1e09a51631a0533eb7975a_username=89300f1b166de936133172cdba6807a6fc692d2384c1227898d037106a5ef286a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226d36deeeac1e09a51631a0533eb7975a_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar=expanded; Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar-details=expanded; CRAFT_CSRF_TOKEN=79d81581b5a0ebd60c380faa687eaa00eb155b7b7036bd742cbd9cf76b826981a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22iNLTzo6cY7KwJZnR93IoIuyeyqNOkLnF-_Qehlqz%7C4f7bdf29f10a20f23400f3915f9f56530211f71c6008515c497338c823e69a34iNLTzo6cY7KwJZnR93IoIuyeyqNOkLnF-_Qehlqz%7C1%22%3B%7D; CraftSessionId=4e616d8182b7819bbd5927cbfd2862c2; 6d36deeeac1e09a51631a0533eb7975a_identity=3ffca98b09d7f4e7ffcd953a143629214598c63e0cb5a6b637ee107b5dfcda1ea%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226d36deeeac1e09a51631a0533eb7975a_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22riSQ-40Dk62KiIJyZmsWaAa5lo7MtfSyhUocTNQgY2KeeDivKupZdWo7lEFfsDmzZrUjI_DY96HPodNcnQsLBrFiCkcRDz7pyczs%5C%22%2Cnull%2C%5C%22b801d494f122793b0612636bfa234b9c%5C%22%5D%22%2C3600%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-AT,de;q=0.9,en-GB;q=0.8,en;q=0.7,de-DE;q=0.6,en-US;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+    'HTTP_HOST' => 'kinderturnus.ddev.site'
+    'HTTPS' => 'off'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'kinderturnus.ddev.site'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.17.0.3'
+    'REMOTE_PORT' => '54516'
+    'REMOTE_ADDR' => '172.17.0.5'
+    'SERVER_SOFTWARE' => 'nginx/1.26.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?p=admin%2Factions%2Fqueue%2Frun&v=1740783741596'
+    'CONTENT_LENGTH' => '0'
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'p=admin%2Factions%2Fqueue%2Frun&v=1740783741596'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1740783741.598
+    'REQUEST_TIME' => 1740783741
+    'CRAFT_APP_ID' => ''
+    'CRAFT_ENVIRONMENT' => 'dev'
+    'CRAFT_DB_DRIVER' => 'mysql'
+    'CRAFT_DB_SERVER' => 'db'
+    'CRAFT_DB_PORT' => '3306'
+    'CRAFT_DB_DATABASE' => 'db'
+    'CRAFT_DB_USER' => 'db'
+    'CRAFT_DB_PASSWORD' => '••'
+    'CRAFT_DB_SCHEMA' => 'public'
+    'CRAFT_DB_TABLE_PREFIX' => ''
+    'CRAFT_SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'CRAFT_DEV_MODE' => 'true'
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true'
+    'CRAFT_DISALLOW_ROBOTS' => 'true'
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1'
+    'MAILPIT_SMTP_PORT' => '1025'
+    'CRAFT_WEB_ROOT' => '/var/www/html/web'
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site'
+] {"environment":"dev","userId":1} 
+2025-02-28 15:02:29 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":822888} 
+2025-02-28 15:02:29 [queue.INFO] [yii\web\Session::open] Session started {"memory":1164184} 
+2025-02-28 15:02:29 [queue.INFO] [nystudio107\codeeditor\CodeEditor::bootstrap] CodeEditor module bootstrapped {"memory":1203744} 
+2025-02-28 15:02:29 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":1586456} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [456] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":1644392} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [456] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.014s) {"memory":2027648} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [457] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2034944} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [457] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.006s) {"memory":2096712} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [458] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2104008} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [458] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.008s) {"memory":2169872} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [459] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2177168} 
+2025-02-28 15:02:29 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [459] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.009s) {"memory":2238936} 
+2025-02-28 15:02:29 [queue.INFO] [application] Request context:
+$_GET = [
+    'p' => 'admin/actions/queue/run'
+    'v' => '1740783749042'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '6d36deeeac1e09a51631a0533eb7975a_username' => '89300f1b166de936133172cdba6807a6fc692d2384c1227898d037106a5ef286a:2:{i:0;s:41:\"6d36deeeac1e09a51631a0533eb7975a_username\";i:1;s:5:\"admin\";}'
+    'Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar' => 'expanded'
+    'Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar-details' => 'expanded'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'CraftSessionId' => '4e616d8182b7819bbd5927cbfd2862c2'
+    '6d36deeeac1e09a51631a0533eb7975a_identity' => '3ffca98b09d7f4e7ffcd953a143629214598c63e0cb5a6b637ee107b5dfcda1ea:2:{i:0;s:41:\"6d36deeeac1e09a51631a0533eb7975a_identity\";i:1;s:159:\"[1,\"[\\\"riSQ-40Dk62KiIJyZmsWaAa5lo7MtfSyhUocTNQgY2KeeDivKupZdWo7lEFfsDmzZrUjI_DY96HPodNcnQsLBrFiCkcRDz7pyczs\\\",null,\\\"b801d494f122793b0612636bfa234b9c\\\"]\",3600]\";}'
+]
+
+$_SESSION = [
+    '64ef28d2f38eee3fca648436bff9332f__flash' => []
+    '6d36deeeac1e09a51631a0533eb7975a__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '6d36deeeac1e09a51631a0533eb7975a__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '6d36deeeac1e09a51631a0533eb7975a__expire' => 1740787349
+    '__duration' => 3600
+    '__elevated_timeout' => 1740784037
+    '64ef28d2f38eee3fca648436bff9332f__auth_access' => [
+        0 => 'saveAssets:21950e08-1320-46dd-b9f3-8ddae1b3aa50'
+        1 => 'previewElement:2'
+    ]
+]
+
+$_SERVER = [
+    'DEPLOY_NAME' => 'local'
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm'
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm'
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0'
+    'IS_DDEV_PROJECT' => 'true'
+    'PHP_DEFAULT_VERSION' => '8.2'
+    'HOSTNAME' => 'kinderturnus-web'
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025'
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket'
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem'
+    'DOCKER_IP' => '127.0.0.1'
+    'PGPASSWORD' => 'db'
+    'MYSQL_PWD' => 'db'
+    'DDEV_DOCROOT' => 'web'
+    'PWD' => '/var/www/html'
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0'
+    'DDEV_FILES_DIR' => ''
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf'
+    'PHP_INI' => '/etc/php/8.2/fpm/php.ini'
+    'GOARCH' => 'arm64'
+    'DDEV_VERSION' => 'v1.23.5'
+    'TZ' => 'Europe/Amsterdam'
+    'HTTPS_EXPOSE' => '443:80,8026:8025'
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack'
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site'
+    'LINES' => '13'
+    'DDEV_SITENAME' => 'kinderturnus'
+    'HOME' => '/home/andreawindisch'
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site'
+    'LANG' => 'C.UTF-8'
+    'COLUMNS' => '106'
+    'DDEV_MUTAGEN_ENABLED' => 'true'
+    'PGUSER' => 'db'
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache'
+    'DDEV_ROUTER_HTTP_PORT' => '80'
+    'COMPOSER_PROCESS_TIMEOUT' => '2000'
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf'
+    'DDEV_FILES_DIRS' => ''
+    'HTTP_EXPOSE' => '80:80,8025:8025'
+    'NVM_DIR' => '/home/andreawindisch/.nvm'
+    'DDEV_PHP_VERSION' => '8.2'
+    'DDEV_TLD' => 'ddev.site'
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site'
+    'DDEV_PROJECT' => 'kinderturnus'
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site'
+    'TERM' => 'xterm'
+    'USER' => 'andreawindisch'
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history'
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d'
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert'
+    'SHLVL' => '1'
+    'COMPOSER_ALLOW_SUPERUSER' => '1'
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc'
+    'DDEV_DATABASE' => 'mysql:8.0'
+    'PGDATABASE' => 'db'
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof'
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer'
+    'DDEV_XDEBUG_ENABLED' => 'false'
+    'DDEV_DATABASE_FAMILY' => 'mysql'
+    'PGHOST' => 'db'
+    'DDEV_COMPOSER_ROOT' => '/var/www/html'
+    'DOCROOT' => 'web'
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1'
+    'PATH' => '~/bin:/var/www/html/vendor/bin:~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin:/var/www/html/bin'
+    'HOST_DOCKER_INTERNAL_IP' => ''
+    'DDEV_PROJECT_TYPE' => 'craftcms'
+    'DEBIAN_FRONTEND' => 'noninteractive'
+    'DDEV_ROUTER_HTTPS_PORT' => '443'
+    'GOOS' => 'darwin'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_REGISTERED_JS_FILES' => ''
+    'HTTP_X_REGISTERED_ASSET_BUNDLES' => '92d8701,22e517a2,aee7f8dc,e505ffd6,6b4d7555,bb2f10a0,e5e48399,815d39ea,fc0bc163,1ccab40d,1e21896b,54698ee0,b842675b,1c3c9add,4b1fd285,d8d08e47,8f00ce04,8768f48b,cf3018d6,e7c1329,7b7669ac,9f64c09b'
+    'HTTP_X_REAL_IP' => '172.17.0.1'
+    'HTTP_X_FORWARDED_SERVER' => '7c1a8a2adc53'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_FORWARDED_PORT' => '80'
+    'HTTP_X_FORWARDED_HOST' => 'kinderturnus.ddev.site'
+    'HTTP_X_FORWARDED_FOR' => '172.17.0.1'
+    'HTTP_X_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'HTTP_REFERER' => 'http://kinderturnus.ddev.site/admin/entries/home/2-home'
+    'HTTP_ORIGIN' => 'http://kinderturnus.ddev.site'
+    'HTTP_COOKIE' => '6d36deeeac1e09a51631a0533eb7975a_username=89300f1b166de936133172cdba6807a6fc692d2384c1227898d037106a5ef286a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226d36deeeac1e09a51631a0533eb7975a_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar=expanded; Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar-details=expanded; CRAFT_CSRF_TOKEN=79d81581b5a0ebd60c380faa687eaa00eb155b7b7036bd742cbd9cf76b826981a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22iNLTzo6cY7KwJZnR93IoIuyeyqNOkLnF-_Qehlqz%7C4f7bdf29f10a20f23400f3915f9f56530211f71c6008515c497338c823e69a34iNLTzo6cY7KwJZnR93IoIuyeyqNOkLnF-_Qehlqz%7C1%22%3B%7D; CraftSessionId=4e616d8182b7819bbd5927cbfd2862c2; 6d36deeeac1e09a51631a0533eb7975a_identity=3ffca98b09d7f4e7ffcd953a143629214598c63e0cb5a6b637ee107b5dfcda1ea%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226d36deeeac1e09a51631a0533eb7975a_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22riSQ-40Dk62KiIJyZmsWaAa5lo7MtfSyhUocTNQgY2KeeDivKupZdWo7lEFfsDmzZrUjI_DY96HPodNcnQsLBrFiCkcRDz7pyczs%5C%22%2Cnull%2C%5C%22b801d494f122793b0612636bfa234b9c%5C%22%5D%22%2C3600%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-AT,de;q=0.9,en-GB;q=0.8,en;q=0.7,de-DE;q=0.6,en-US;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+    'HTTP_HOST' => 'kinderturnus.ddev.site'
+    'HTTPS' => 'off'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'kinderturnus.ddev.site'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.17.0.3'
+    'REMOTE_PORT' => '56210'
+    'REMOTE_ADDR' => '172.17.0.5'
+    'SERVER_SOFTWARE' => 'nginx/1.26.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?p=admin%2Factions%2Fqueue%2Frun&v=1740783749042'
+    'CONTENT_LENGTH' => '0'
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'p=admin%2Factions%2Fqueue%2Frun&v=1740783749042'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1740783749.0447
+    'REQUEST_TIME' => 1740783749
+    'CRAFT_APP_ID' => ''
+    'CRAFT_ENVIRONMENT' => 'dev'
+    'CRAFT_DB_DRIVER' => 'mysql'
+    'CRAFT_DB_SERVER' => 'db'
+    'CRAFT_DB_PORT' => '3306'
+    'CRAFT_DB_DATABASE' => 'db'
+    'CRAFT_DB_USER' => 'db'
+    'CRAFT_DB_PASSWORD' => '••'
+    'CRAFT_DB_SCHEMA' => 'public'
+    'CRAFT_DB_TABLE_PREFIX' => ''
+    'CRAFT_SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'CRAFT_DEV_MODE' => 'true'
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true'
+    'CRAFT_DISALLOW_ROBOTS' => 'true'
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1'
+    'MAILPIT_SMTP_PORT' => '1025'
+    'CRAFT_WEB_ROOT' => '/var/www/html/web'
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site'
+] {"environment":"dev","userId":1} 
+2025-02-28 23:42:18 [queue.INFO] [yii\web\Session::open] Session started {"memory":1164184} 
+2025-02-28 23:42:18 [queue.INFO] [nystudio107\codeeditor\CodeEditor::bootstrap] CodeEditor module bootstrapped {"memory":1203744} 
+2025-02-28 23:42:18 [queue.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":1586456} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [460] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":1644392} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [460] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.018s) {"memory":2027648} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [461] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2034944} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [461] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.007s) {"memory":2096712} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [462] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2104008} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [462] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.007s) {"memory":2169872} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::beforeExec]  [463] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Started {"memory":2177168} 
+2025-02-28 23:42:18 [queue.INFO] [craft\queue\QueueLogBehavior::afterExec]  [463] t9n:["app","Generating image transform"] (attempt: 1, pid: 2262) - Done (time: 0.009s) {"memory":2238936} 
+2025-02-28 23:42:18 [queue.INFO] [application] Request context:
+$_GET = [
+    'p' => 'admin/actions/queue/run'
+    'v' => '1740814938885'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '6d36deeeac1e09a51631a0533eb7975a_username' => '89300f1b166de936133172cdba6807a6fc692d2384c1227898d037106a5ef286a:2:{i:0;s:41:\"6d36deeeac1e09a51631a0533eb7975a_username\";i:1;s:5:\"admin\";}'
+    'Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar' => 'expanded'
+    'Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar-details' => 'expanded'
+    'CraftSessionId' => 'e3ceaae5c15bac79536b4a4175af34a6'
+    '6d36deeeac1e09a51631a0533eb7975a_identity' => 'f156781ab9984d7112fb206a4e67095253a9f8a8f4343de0dc45a7aa1954fbfaa:2:{i:0;s:41:\"6d36deeeac1e09a51631a0533eb7975a_identity\";i:1;s:159:\"[1,\"[\\\"kb5kK-3LxIPxXZN0Y172IcfhMX_-lTmgC9YSIIuxCzsnv3ms0SfQ9ho0oNSksr5bUKkJai435LQt41ou8TyC7EdC5Fs37nuoE2tg\\\",null,\\\"b801d494f122793b0612636bfa234b9c\\\"]\",3600]\";}'
+    'CRAFT_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+]
+
+$_SESSION = [
+    '64ef28d2f38eee3fca648436bff9332f__flash' => []
+    '64ef28d2f38eee3fca648436bff9332f__auth_access' => [
+        0 => 'saveAssets:21950e08-1320-46dd-b9f3-8ddae1b3aa50'
+        1 => 'previewElement:2'
+    ]
+    '6d36deeeac1e09a51631a0533eb7975a__token' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '6d36deeeac1e09a51631a0533eb7975a__id' => 1
+    '__authKey' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    '6d36deeeac1e09a51631a0533eb7975a__expire' => 1740818538
+    '__duration' => 3600
+    '__elevated_timeout' => 1740815006
+]
+
+$_SERVER = [
+    'DEPLOY_NAME' => 'local'
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm'
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm'
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0'
+    'IS_DDEV_PROJECT' => 'true'
+    'PHP_DEFAULT_VERSION' => '8.2'
+    'HOSTNAME' => 'kinderturnus-web'
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025'
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket'
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem'
+    'DOCKER_IP' => '127.0.0.1'
+    'PGPASSWORD' => 'db'
+    'MYSQL_PWD' => 'db'
+    'DDEV_DOCROOT' => 'web'
+    'PWD' => '/var/www/html'
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0'
+    'DDEV_FILES_DIR' => ''
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf'
+    'PHP_INI' => '/etc/php/8.2/fpm/php.ini'
+    'GOARCH' => 'arm64'
+    'DDEV_VERSION' => 'v1.23.5'
+    'TZ' => 'Europe/Amsterdam'
+    'HTTPS_EXPOSE' => '443:80,8026:8025'
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack'
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site'
+    'LINES' => '13'
+    'DDEV_SITENAME' => 'kinderturnus'
+    'HOME' => '/home/andreawindisch'
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site'
+    'LANG' => 'C.UTF-8'
+    'COLUMNS' => '106'
+    'DDEV_MUTAGEN_ENABLED' => 'true'
+    'PGUSER' => 'db'
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache'
+    'DDEV_ROUTER_HTTP_PORT' => '80'
+    'COMPOSER_PROCESS_TIMEOUT' => '2000'
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf'
+    'DDEV_FILES_DIRS' => ''
+    'HTTP_EXPOSE' => '80:80,8025:8025'
+    'NVM_DIR' => '/home/andreawindisch/.nvm'
+    'DDEV_PHP_VERSION' => '8.2'
+    'DDEV_TLD' => 'ddev.site'
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site'
+    'DDEV_PROJECT' => 'kinderturnus'
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site'
+    'TERM' => 'xterm'
+    'USER' => 'andreawindisch'
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history'
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d'
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert'
+    'SHLVL' => '1'
+    'COMPOSER_ALLOW_SUPERUSER' => '1'
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc'
+    'DDEV_DATABASE' => 'mysql:8.0'
+    'PGDATABASE' => 'db'
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof'
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer'
+    'DDEV_XDEBUG_ENABLED' => 'false'
+    'DDEV_DATABASE_FAMILY' => 'mysql'
+    'PGHOST' => 'db'
+    'DDEV_COMPOSER_ROOT' => '/var/www/html'
+    'DOCROOT' => 'web'
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1'
+    'PATH' => '~/bin:/var/www/html/vendor/bin:~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin:/var/www/html/bin'
+    'HOST_DOCKER_INTERNAL_IP' => ''
+    'DDEV_PROJECT_TYPE' => 'craftcms'
+    'DEBIAN_FRONTEND' => 'noninteractive'
+    'DDEV_ROUTER_HTTPS_PORT' => '443'
+    'GOOS' => 'darwin'
+    'SUPERVISOR_ENABLED' => '1'
+    'SUPERVISOR_SERVER_URL' => 'unix:///var/run/supervisor.sock'
+    'SUPERVISOR_PROCESS_NAME' => 'php-fpm'
+    'SUPERVISOR_GROUP_NAME' => 'php-fpm'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_X_REGISTERED_JS_FILES' => ''
+    'HTTP_X_REGISTERED_ASSET_BUNDLES' => '92d8701,22e517a2,aee7f8dc,e505ffd6,6b4d7555,bb2f10a0,e5e48399,815d39ea,fc0bc163,1ccab40d,1e21896b,54698ee0,b842675b,1c3c9add,4b1fd285,d8d08e47,8f00ce04,8768f48b,cf3018d6,e7c1329,7b7669ac,9f64c09b'
+    'HTTP_X_REAL_IP' => '172.17.0.1'
+    'HTTP_X_FORWARDED_SERVER' => '7c1a8a2adc53'
+    'HTTP_X_FORWARDED_PROTO' => 'http'
+    'HTTP_X_FORWARDED_PORT' => '80'
+    'HTTP_X_FORWARDED_HOST' => 'kinderturnus.ddev.site'
+    'HTTP_X_FORWARDED_FOR' => '172.17.0.1'
+    'HTTP_X_CSRF_TOKEN' => '••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••'
+    'HTTP_REFERER' => 'http://kinderturnus.ddev.site/admin/entries/home/2-home'
+    'HTTP_ORIGIN' => 'http://kinderturnus.ddev.site'
+    'HTTP_COOKIE' => '6d36deeeac1e09a51631a0533eb7975a_username=89300f1b166de936133172cdba6807a6fc692d2384c1227898d037106a5ef286a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226d36deeeac1e09a51631a0533eb7975a_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar=expanded; Craft-8bd8e83d-29b5-44f2-835d-174e8d6c711b:sidebar-details=expanded; CraftSessionId=e3ceaae5c15bac79536b4a4175af34a6; 6d36deeeac1e09a51631a0533eb7975a_identity=f156781ab9984d7112fb206a4e67095253a9f8a8f4343de0dc45a7aa1954fbfaa%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226d36deeeac1e09a51631a0533eb7975a_identity%22%3Bi%3A1%3Bs%3A159%3A%22%5B1%2C%22%5B%5C%22kb5kK-3LxIPxXZN0Y172IcfhMX_-lTmgC9YSIIuxCzsnv3ms0SfQ9ho0oNSksr5bUKkJai435LQt41ou8TyC7EdC5Fs37nuoE2tg%5C%22%2Cnull%2C%5C%22b801d494f122793b0612636bfa234b9c%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=79d81581b5a0ebd60c380faa687eaa00eb155b7b7036bd742cbd9cf76b826981a%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A147%3A%22iNLTzo6cY7KwJZnR93IoIuyeyqNOkLnF-_Qehlqz%7C4f7bdf29f10a20f23400f3915f9f56530211f71c6008515c497338c823e69a34iNLTzo6cY7KwJZnR93IoIuyeyqNOkLnF-_Qehlqz%7C1%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'de-AT,de;q=0.9,en-GB;q=0.8,en;q=0.7,de-DE;q=0.6,en-US;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_CONTENT_LENGTH' => '0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36'
+    'HTTP_HOST' => 'kinderturnus.ddev.site'
+    'HTTPS' => 'off'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'kinderturnus.ddev.site'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '172.17.0.3'
+    'REMOTE_PORT' => '37200'
+    'REMOTE_ADDR' => '172.17.0.5'
+    'SERVER_SOFTWARE' => 'nginx/1.26.2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/var/www/html/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index.php?p=admin%2Factions%2Fqueue%2Frun&v=1740814938885'
+    'CONTENT_LENGTH' => '0'
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'p=admin%2Factions%2Fqueue%2Frun&v=1740814938885'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/var/www/html/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1740814938.8891
+    'REQUEST_TIME' => 1740814938
+    'CRAFT_APP_ID' => ''
+    'CRAFT_ENVIRONMENT' => 'dev'
+    'CRAFT_DB_DRIVER' => 'mysql'
+    'CRAFT_DB_SERVER' => 'db'
+    'CRAFT_DB_PORT' => '3306'
+    'CRAFT_DB_DATABASE' => 'db'
+    'CRAFT_DB_USER' => 'db'
+    'CRAFT_DB_PASSWORD' => '••'
+    'CRAFT_DB_SCHEMA' => 'public'
+    'CRAFT_DB_TABLE_PREFIX' => ''
+    'CRAFT_SECURITY_KEY' => '••••••••••••••••••••••••••••••••'
+    'CRAFT_DEV_MODE' => 'true'
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true'
+    'CRAFT_DISALLOW_ROBOTS' => 'true'
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1'
+    'MAILPIT_SMTP_PORT' => '1025'
+    'CRAFT_WEB_ROOT' => '/var/www/html/web'
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site'
+] {"environment":"dev","userId":1} 

@@ -1,0 +1,26 @@
+{% if panel.sliderBilder|length %}
+    <div class="slider">
+        <div class="slider-container">
+            {% for image in panel.sliderBilder.all() %}
+                <div class="slide {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
+                    <img src="{{ image.getUrl() }}" alt="{{ image.altText }}" class="img-rounded">
+                </div>
+            {% endfor %}
+        </div>
+
+        <!-- Navigation Arrows -->
+        <span class="controls left-arrow">
+            {% include "_svgs/arrow.twig" %}
+        </span>
+        <span class="controls right-arrow">
+            {% include "_svgs/arrow.twig" %}
+        </span>
+
+        <!-- Dots Navigation -->
+        <div class="dots-container">
+            {% for image in panel.sliderBilder.all() %}
+                <span class="dot {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}"></span>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}

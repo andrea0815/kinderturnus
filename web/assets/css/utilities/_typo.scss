@@ -1,0 +1,65 @@
+@use 'variables' as v;
+
+@mixin text-default($color: v.$color-black) {
+    font-size: v.$text-size-default;
+    font-family: v.$font-default;
+    text-decoration: none;
+    line-height: v.$line-height-s;
+    color: $color;
+    font-weight: 500;
+}
+
+@mixin text-h1($color: v.$color-red) {
+    font-size: v.$text-size-h1;
+    font-family: v.$font-default;
+    text-decoration: none;
+    line-height: v.$line-height-s;
+    color: $color;
+    font-weight: 700;
+
+}
+
+@mixin text-h2($color: v.$color-red) {
+    font-size: v.$text-size-h2;
+    font-family: v.$font-default;
+    text-decoration: none;
+    line-height: v.$line-height-s;
+    color: $color;
+    font-weight: 700;
+}
+
+@mixin text-h3($color: v.$color-red) {
+    font-size: v.$text-size-h3;
+    font-family: v.$font-default;
+    text-decoration: none;
+    line-height: v.$line-height-s;
+    color: $color;
+    font-weight: 700;
+}
+
+@mixin text-navigation($color: v.$color-red) {
+    font-size: v.$text-size-h4;
+    font-family: v.$font-default;
+    text-decoration: none;
+    line-height: v.$line-height-s;
+    color: $color;
+    font-weight: 400;
+}
+
+h1 {
+    @include text-h1();
+}
+
+h2 {
+    @include text-h2();
+    margin-bottom: v.$space-4;
+}
+
+h3 {
+    @include text-h3();
+    margin-bottom: v.$space-4;
+}
+
+.column-2 {
+    column-count: 2;
+}

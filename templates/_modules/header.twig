@@ -1,5 +1,10 @@
-<header
-	class="flex-between">
+<header>
 	{% include "_components/logo.twig" %}
+
+	{% if globalsGeneral.websiteTitle|length %}
+		<h1 class="web-title">
+			{{ globalsGeneral.websiteTitle }}
+		</h1>
+	{% endif %}
 	{% include "_modules/nav.twig" %}
 </header>

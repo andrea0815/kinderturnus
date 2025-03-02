@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap");
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -32,15 +33,15 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Dosis";
   text-decoration: none;
-  color: rgb(27, 27, 27);
+  color: rgb(56, 52, 45);
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5 {
-  font-size: 2.5rem;
-  font-family: "Roboto";
-  color: rgb(81, 0, 255);
+  font-family: "Dosis";
+  color: #C62E3C;
 }
 
 ul, ol {
@@ -53,29 +54,27 @@ a {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 button {
   all: unset;
   display: inline-block;
   cursor: pointer;
-  background-color: rgb(81, 0, 255);
+  background-color: #C62E3C;
   color: rgb(255, 255, 255);
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
 }
 button:hover {
-  background-color: #4100cc;
+  background-color: #9e2530;
 }
 
-nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: space-between;
-  /* Accessing the mixin through namespace */
-  gap: 15px;
-}
-
-h1, h2, h3, h4, h5, p {
+h2, h3, h4, h5, p {
   animation-name: fade-in-top;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -100,8 +99,10 @@ h1, h2, h3, h4, h5, p {
 }
 
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  transform: translate(-110%, -35%);
 }
 .logo img {
   width: 100%;
@@ -204,64 +205,190 @@ h1, h2, h3, h4, h5, p {
     transform: translateY(100%);
   }
 }
-input,
-textarea,
-select {
-  box-sizing: border-box;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  outline: none;
-  transition: all 0.2s ease-in-out;
+h1 {
+  font-size: 2.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
 }
 
-input {
-  width: 100%;
-  display: block;
-  background-color: transparent;
-  border: rgba(27, 27, 27, 0.5) 2px solid;
-  padding: 5px 10px;
+h2 {
+  font-size: 1.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
   margin-bottom: 20px;
-}
-input[type=radio], input[type=checkbox] {
-  width: 20px;
-  height: 20px;
-  border: rgba(27, 27, 27, 0.5) 2px solid;
-  border-radius: 3px; /* Apply a small border radius */
-  background-color: transparent;
-}
-input[type=radio]:checked, input[type=checkbox]:checked {
-  background-color: rgb(81, 0, 255); /* Optional: Highlight when checked */
-  border-color: rgb(81, 0, 255);
-}
-input:focus {
-  border-color: rgb(81, 0, 255);
 }
 
-textarea {
-  width: 100%;
-  display: block;
-  background-color: transparent;
-  border: rgba(27, 27, 27, 0.5) 2px solid;
-  padding: 5px 10px;
+h3 {
+  font-size: 1.2rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
   margin-bottom: 20px;
+}
+
+.column-2 {
+  -moz-column-count: 2;
+       column-count: 2;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+  background-color: #F8F2E4;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  grid-column: 2;
+  margin-bottom: 50px;
 }
 
 header {
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 50px 0 70px 0;
+}
+header .web-title {
+  margin-right: 10px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: space-between;
+  /* Accessing the mixin through namespace */
+  gap: 15px;
+}
+header nav ul a {
+  font-size: 1.2rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+}
+header nav ul a:hover {
+  color: rgba(198, 46, 61, 0.5);
 }
 
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+.panel {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  padding-bottom: 30px;
+  border-radius: 15px;
+  margin-bottom: 50px;
 }
-footer .website-social-links {
+.panel.frage {
+  margin-bottom: 20px;
+}
+.panel .faq-question {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 0;
+}
+.panel .faq-question:hover {
+  color: #007bff;
+}
+.panel .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  padding: 0 10px;
+  color: #444;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.slider .slider-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  transition: transform 0.5s ease-in-out;
+}
+.slider .slide {
+  min-width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: none;
+  aspect-ratio: 16/9;
+}
+.slider .slide.active {
+  opacity: 1;
+  display: block;
+}
+.slider .slide img {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+}
+.slider .controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 10px;
+  position: absolute;
+  top: 43%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0);
+  color: #C62E3C;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.slider .controls.left-arrow {
+  left: 0;
+  transform: translateX(-200%);
+}
+.slider .controls.right-arrow {
+  right: 0;
+  transform: translateX(200%) rotate(180deg);
+}
+.slider .controls svg {
+  height: 100%;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.slider .controls:hover {
+  background: rgb(255, 255, 255);
+}
+.slider .controls:hover svg {
+  margin-right: 10px;
+}
+.slider .dots-container {
+  text-align: center;
+}
+.slider .dots-container .dot {
+  width: 10px;
+  height: 10px;
+  margin: 10px 5px;
+  background: rgba(56, 52, 45, 0.3);
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.slider .dots-container .dot.active {
+  background: rgba(56, 52, 45, 0.7);
 }/*# sourceMappingURL=modules.css.map */

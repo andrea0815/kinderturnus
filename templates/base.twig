@@ -38,10 +38,10 @@
 		content="..."/>
 	<meta
 		name="designer"
-		content="..."/>
+		content="Andrea Windisch"/>
 	<meta
 		name="programmer"
-		content="left.studio"/>
+		content="Andrea Windisch"/>
 	<meta
 		name="keywords"
 		content="..."/>
@@ -62,9 +62,12 @@
 	{% include '_utilities/stylesheets.twig' %}
 </html></head><body>
 {% include '_components/loader.twig' %}
+
+<div class="wrapper">
 {% block bodyblock %}
 	{# All Pages go here #}
 {% endblock %}
+</div>
 <script
 	type="module"
 	src="{{alias('@web')}}/assets/js/main.js"></script>

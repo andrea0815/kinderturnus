@@ -1,15 +1,83 @@
-@use '../utilities/utilities' as util;
+@use '../utilities/utilities' as u;
 
-header {
-    padding: util.$space-3;
+body {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    background-color: u.$color-background;
+
 }
 
-footer {
-    @include util.flex-row(space-between, center);
-    padding: util.$space-3;
+.wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    grid-column: 2;
+    margin-bottom: u.$space-5;
+}
 
-    .website-social-links {
-        @include util.flex-row(space-between, center);
-        gap: util.$gap-2;
+header {
+    @include u.flex-row(space-between, baseline);
+    margin: u.$space-5 0 u.$space-6 0;
+
+    .web-title {
+        margin-right: u.$space-3;
     }
+
+    nav {
+        ul {
+            @include u.flex-row(end, space-between);
+            /* Accessing the mixin through namespace */
+            gap: u.$gap-3;
+
+            a {
+                @include u.text-navigation();
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: u.$color-red-50;
+                }
+            }
+        }
+    }
+
+}
+
+.panel {
+    background-color: u.$color-white-50;
+    padding: u.$space-4-5;
+    padding-bottom: u.$space-4-5;
+    border-radius: u.$radius-2;
+    margin-bottom: u.$space-5;
+
+    &.frage {
+        margin-bottom: u.$space-4;
+    }
+
+
+
+    .faq-question {
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        padding: 10px;
+        transition: color 0.3s ease-in-out;
+        margin-bottom: 0;
+
+        &:hover {
+            color: #007bff;
+        }
+    }
+
+
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        padding: 0 10px;
+        color: #444;
+    }
+
+
+
 }

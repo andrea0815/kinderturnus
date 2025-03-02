@@ -8,6 +8,7 @@ settings:
   defaultIndexViewMode: cards
   entryTypes:
     - c6f6306c-233c-4367-bae6-ef94f49a66b9 # Tags
+    - 0148cf6d-f099-4ab2-aa44-c0f3c006e169 # Tag Frage
   includeTableView: false
   maxEntries: null
   minEntries: 2
