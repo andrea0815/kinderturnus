@@ -297,7 +297,7 @@ body::after {
   inset: 0;
   z-index: 100;
   pointer-events: none;
-  background: linear-gradient(160deg, rgba(144, 109, 59, 0) 0%, rgb(238, 204, 176) 100%);
+  background: linear-gradient(160deg, rgba(144, 109, 59, 0) 3%, rgb(244, 176, 120) 100%);
   background-size: cover;
   mix-blend-mode: darken;
   opacity: 0.5;

@@ -32,10 +32,10 @@ body::after {
     inset: 0;
     z-index: 100;
     pointer-events: none;  // Prevents interference with clicks
-    background: linear-gradient(160deg, rgba(144, 109, 59, 0) 0%, rgb(238, 204, 176) 100%);  // Ensure Sass variables are interpolated
+    background: linear-gradient(160deg, rgba(144, 109, 59, 0) 3%, rgb(244, 176, 120) 100%);  // Ensure Sass variables are interpolated
     background-size: cover;
     mix-blend-mode: darken;  // Blend the noise with the gradient
-    opacity: 0.50;  // Adjust grain strength
+    opacity: 0.5;  // Adjust grain strength
 }
 
 
