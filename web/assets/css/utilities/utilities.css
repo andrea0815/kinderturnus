@@ -28,7 +28,9 @@
   align-items: center;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,12 +41,17 @@
   line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Dosis";
   color: #C62E3C;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -74,7 +81,11 @@ button:hover {
   background-color: #9e2530;
 }
 
-h2, h3, h4, h5, p {
+h2,
+h3,
+h4,
+h5,
+p {
   animation-name: fade-in-top;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
@@ -99,14 +110,44 @@ h2, h3, h4, h5, p {
 }
 
 .logo {
-  width: 180px;
-  height: 180px;
-  position: absolute;
-  transform: translate(-110%, -35%);
+  grid-column: 1;
+  margin: 20px; /* Adjvarst as needed */
+  margin-top: 85px;
+  display: flex; /* Ensures proper scaling */
+  max-width: 200px;
+  max-height: 200px;
+  justify-self: end;
 }
 .logo img {
-  width: 100%;
+  width: 100%; /* Makes it take the full column width */
+  height: auto; /* Maintains aspect ratio */
+  max-width: 100%; /* Ensures it doesn't exceed container width */
+  max-height: 100%; /* Ensures it doesn't exceed container height */
+  -o-object-fit: contain;
+     object-fit: contain;
+  transform: translateY(-55%);
+}
+
+.arrow {
+  color: #C62E3C;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+.arrow svg {
   height: 100%;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.arrow.right {
+  transform: rotate(180deg);
+}
+.arrow.down {
+  transform: rotate(270deg);
 }
 
 @keyframes fade-in {

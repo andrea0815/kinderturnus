@@ -1,0 +1,28 @@
+fieldLayouts:
+  73b9e365-92ee-456d-8dcc-f54a17de7f32:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-03-03T08:04:34+00:00'
+            elementCondition: null
+            fieldUid: d704fbaf-33b7-4ef5-9564-fc9e43c1e2a8 # Gallerie Password
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69145009-8d29-4d1e-9bd5-ad0fb9038dd8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c686acc8-f07a-4726-929b-1a044ecc3139
+        userCondition: null
+handle: gallerie
+name: Gallerie
+sortOrder: 4

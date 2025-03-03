@@ -2,10 +2,11 @@
 
 body {
     display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 2fr minmax(0, 800px) 2fr; 
+    justify-content: center; /* Ensures grid stays centered */
     background-color: u.$color-background;
-
 }
+
 
 .wrapper {
     width: 100%;
@@ -14,6 +15,8 @@ body {
     grid-column: 2;
     margin-bottom: u.$space-5;
 }
+
+
 
 header {
     @include u.flex-row(space-between, baseline);
@@ -54,30 +57,102 @@ header {
     }
 
 
-
-    .faq-question {
-        cursor: pointer;
-        font-size: 18px;
-        font-weight: bold;
-        position: relative;
-        padding: 10px;
-        transition: color 0.3s ease-in-out;
-        margin-bottom: 0;
-
-        &:hover {
-            color: #007bff;
+    .faq-question-container {
+        @include u.flex-row(space-between, center); 
+        
+        .faq-question {
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+            margin-bottom: 0;
+            
+            &:hover {
+                color: u.$color-red-50;
+            }
         }
     }
 
 
     .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-        padding: 0 10px;
-        color: #444;
+        // max-height: 0;
+        // overflow: hidden;
+        // transition: max-height 0.4s ease-in-out;
+        // color: #444;
+        // box-sizing: border-box;
+
+        p {
+            padding-top: u.$space-3;
+        }
     }
 
 
 
+}
+
+.accordion-container {
+    .accordion-header {
+        cursor: pointer;
+
+        & * {
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover * {
+            color: u.$color-red-50;
+        }
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        color: #444;
+        box-sizing: border-box;
+       
+    }
+}
+
+form {
+    @include u.flex-column(center, center);
+    margin: u.$space-5 0;
+    gap: u.$space-4;
+
+    input, button {
+        max-width: 90%;
+        width: 200px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    input {
+        padding: u.$space-3 u.$space-4;
+        border-radius: u.$radius-2;
+        border: 2px solid u.$color-red;
+        background-color: transparent;
+       
+
+        :active {
+            border-color: u.$color-red-50;
+        }
+        :focus {
+            border-color: u.$color-red-50;
+        }
+    }
+
+    button {
+        padding: u.$space-3 u.$space-4;
+        border-radius: u.$radius-2;
+        border: 2px solid u.$color-red;
+        background-color: u.$color-red;
+        transition: all .2s ease-in-out;
+        font-weight: 600;
+
+        &:hover {
+            background-color: u.$color-red-50;
+            color: u.$color-white;
+            
+        }
+    }
 }

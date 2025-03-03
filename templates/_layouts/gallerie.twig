@@ -1,7 +1,13 @@
+
 {% extends "base" %}
 
+
+
 {% block bodyblock %}
+	
+
 	{% include "_modules/header.twig" %}
+
 
 	<div class="panel">
 
@@ -13,34 +19,12 @@
 			<p>{{ entry.textBlock }}</p>
 		{% endif %}
 
-
-		{% if entry.gallerieStruktur|length %}
-			{% for tag in entry.gallerieStruktur %}
-
-				<div>
-
-					{% if tag.datum|length %}
-						<h3>{{ tag.datum|date("d.m.Y") }}</h3>
-					{% endif %}
-
-					{% if tag.imageGallery|length %}
-						<div class="image-container">
-							{% for image in tag.imageGallery.all() %}
-								<img src="{{ image.getUrl() }}" alt="{{ image.altText }}">
-							{% endfor %}
-						</div>
-					{% endif %}
-
-				</div>
-
-			{% endfor %}
-			
-		{% else %}
-			<p>Keine Inhalte vorhanden.</p>
-		{% endif %}
+		{% include "_modules/gallery-login.twig" %}
 	</div>
 
 
 {% endblock %}
 
-{% block scriptblock %}{% endblock %}
+{% block scriptblock %}
+	 <script src="{{ siteUrl('assets/js/utilities/accordion.js') }}"></script>
+{% endblock %}

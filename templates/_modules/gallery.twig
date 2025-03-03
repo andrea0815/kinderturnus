@@ -1,0 +1,32 @@
+{% if entry.gallerieStruktur|length %}
+    <div class="gallery">
+
+        {% for tag in entry.gallerieStruktur %}
+
+            <div class="accordion-container">
+
+                {% if tag.datum|length %}
+                    <div class="accordion-header">
+                        <span class="arrow right">
+                            {% include "_svgs/arrow.twig" %}
+                        </span>
+                        <h3>{{ tag.datum|date("d.m.Y") }}</h3>
+                    </div>
+                {% endif %}
+
+                {% if tag.imageGallery|length %}
+                    <div class="image-container accordion-content">
+                        {% for image in tag.imageGallery.all() %}
+                            <img src="{{ image.getUrl() }}" alt="{{ image.altText }}">
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+            </div>
+
+        {% endfor %}
+    </div>
+
+{% else %}
+    <p>Keine Inhalte vorhanden.</p>
+{% endif %}

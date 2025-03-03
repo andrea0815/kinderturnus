@@ -1,4 +1,4 @@
-dateModified: 1740824761
+dateModified: 1740989074
 email:
   fromEmail: base@left.studio
   fromName: master-project
@@ -48,6 +48,8 @@ meta:
     8b0afb5e-0f5f-4a7d-a74c-cfba0544f628: 'Panel Struktur' # Panel Struktur
     9ac63a1b-d005-4321-a5ad-0e43d29a16eb: Datum # Datum
     9c06d481-577e-43eb-b499-8393ae38056b: 'Gallerie Struktur' # Gallerie Struktur
+    9e20b45e-2af1-481b-a621-a750b9a3affb: all # all
+    11ca03ac-2206-40e4-b96a-f3f21c4d6876: Gallerie # Gallerie
     33ac218a-68d4-4791-a392-586037092766: 'Website Logo' # Website Logo
     36dca454-5bf3-422e-b397-abb58dda5bbc: Image # Image
     43dd2356-ba3d-4c0f-9dc7-ef6f8103a49c: Home # Home
@@ -92,6 +94,7 @@ meta:
     c924919a-b86f-4400-becc-657611647d2b: Frage # Frage
     ccff5e66-8f82-4233-a6da-2adaf6c97ced: Italic # Italic
     ce490459-dc63-4854-810e-ff2762981c6f: Videos # Videos
+    d704fbaf-33b7-4ef5-9564-fc9e43c1e2a8: 'Gallerie Password' # Gallerie Password
     da87989f-6fba-4fb3-afae-2501b651f019: 'Alt Text' # Alt Text
     ddb8a1fa-2240-4fd0-a81b-0fe44b227399: Kontakt # Kontakt
     de666abc-e71d-43e3-b318-cc6d8044b6b9: master-project # master-project

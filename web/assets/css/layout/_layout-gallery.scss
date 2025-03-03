@@ -1,0 +1,47 @@
+@use '../utilities/utilities' as u;
+
+.gallery {
+    margin-top: u.$space-4-5;
+
+    .accordion-container {
+        .accordion-header {
+            @include u.flex-row(start, center);
+            gap: u.$space-4;
+            padding: u.$space-4 0;
+
+            h3 {
+                margin: 0;
+            }
+
+            .arrow {
+                width: 20px;
+                height: 20px;
+                padding: 0;
+
+                svg {
+                    margin: 0;
+                }
+            }
+        }
+
+        .accordion-content {
+           img:last-child {
+               margin-bottom: u.$space-5;
+           }
+        }
+    }
+
+
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: u.$space-3;
+
+
+    img {
+        height: 150px;
+        width: auto;
+    }
+}

@@ -11,13 +11,20 @@
 	{% if entry.fragenStruktur|length %}
 		<div class="faq-container">
 			{% for frage in entry.fragenStruktur %}
-				<div class="panel frage">
+				<div class="panel frage accordion-container">
 					{% if frage.frage|length %}
-						<h3 class="faq-question">{{ frage.frage }}</h3>
+						<div class="faq-question-container accordion-header">
+							<h3 class="faq-question">{{ frage.frage }}</h3>
+							<span class="arrow right">
+								{% include "_svgs/arrow.twig" %}
+							</span>
+						</div>
 					{% endif %}
 
 					{% if frage.antwort|length %}
-						<p class="faq-answer">{{ frage.antwort|striptags }}</p>
+						<div class="faq-answer accordion-content">
+							<p>{{ frage.antwort }}</p>
+						</div>
 					{% endif %}
 				</div>
 			{% endfor %}

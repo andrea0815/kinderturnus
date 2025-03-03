@@ -1,22 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const faqQuestions = document.querySelectorAll(".faq-question");
+    const panels = document.querySelectorAll(".accordion-container");
+    console.log(panels);
+    
 
-    faqQuestions.forEach((question) => {
-        question.addEventListener("click", function () {
-            const answer = this.nextElementSibling;
+    panels.forEach((panel) => {
+        const header = panel.querySelector('.accordion-header');
+        const content = panel.querySelector('.accordion-content');
 
+        header.addEventListener("click", function () {
+            
             // Close all other answers
-            document.querySelectorAll(".faq-answer").forEach((p) => {
-                if (p !== answer) {
+            document.querySelectorAll(".accordion-content").forEach((p) => {
+                console.log(p);
+                
+                if (p !== content) {
                     p.style.maxHeight = null;
                 }
             });
 
             // Toggle the clicked answer
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                panel.querySelector('.arrow').classList.remove('down');
+                panel.querySelector('.arrow').classList.add('right');
             } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
+                panel.querySelector('.arrow').classList.add('down');
+                panel.querySelector('.arrow').classList.remove('right');
+                content.style.maxHeight = content.scrollHeight + "px";
             }
         });
     });

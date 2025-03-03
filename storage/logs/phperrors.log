@@ -1,0 +1,833 @@
+[03-Mar-2025 00:24:24 America/Los_Angeles] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: Invalid path alias: @modules/gallery/controllers in /var/www/html/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Module.php(261): yii\BaseYii::getAlias('@modules/galler...')
+#1 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(245): yii\base\Module->getControllerPath()
+#2 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(240): yii\console\controllers\HelpController->getModuleCommands(Object(modules\gallery\GalleryModule))
+#3 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands(Object(craft\console\Application))
+#4 /var/www/html/vendor/yiisoft/yii2/console/UnknownCommandException.php(77): yii\console\controllers\HelpController->getCommands()
+#5 /var/www/html/vendor/yiisoft/yii2/console/ErrorHandler.php(36): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#6 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#7 /var/www/html/vendor/craftcms/cms/src/console/ErrorHandler.php(37): yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#8 [internal function]: craft\console\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#9 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'NVM_RC_VERSION' => '',
+    'DEPLOY_NAME' => 'local',
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm',
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm',
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0',
+    'IS_DDEV_PROJECT' => 'true',
+    'PHP_DEFAULT_VERSION' => '8.2',
+    'HOSTNAME' => 'kinderturnus-web',
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025',
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket',
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem',
+    'DOCKER_IP' => '127.0.0.1',
+    'PGPASSWORD' => 'db',
+    'MYSQL_PWD' => 'db',
+    'DDEV_DOCROOT' => 'web',
+    'PWD' => '/var/www/html',
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0',
+    'DDEV_FILES_DIR' => '',
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf',
+    'GOARCH' => 'arm64',
+    'DDEV_VERSION' => 'v1.23.5',
+    'TZ' => 'Europe/Amsterdam',
+    'HTTPS_EXPOSE' => '443:80,8026:8025',
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack',
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site',
+    'LINES' => '13',
+    'DDEV_SITENAME' => 'kinderturnus',
+    'HOME' => '/home/andreawindisch',
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site',
+    'LANG' => 'C.UTF-8',
+    'PHP_IDE_CONFIG' => 'serverName=kinderturnus.ddev.site',
+    'COLUMNS' => '95',
+    'DDEV_MUTAGEN_ENABLED' => 'true',
+    'PGUSER' => 'db',
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache',
+    'DDEV_ROUTER_HTTP_PORT' => '80',
+    'COMPOSER_PROCESS_TIMEOUT' => '2000',
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf',
+    'DDEV_FILES_DIRS' => '',
+    'HTTP_EXPOSE' => '80:80,8025:8025',
+    'NVM_DIR' => '/home/andreawindisch/.nvm',
+    'DDEV_PHP_VERSION' => '8.2',
+    'DDEV_TLD' => 'ddev.site',
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site',
+    'DDEV_PROJECT' => 'kinderturnus',
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site',
+    'TERM' => 'xterm',
+    'USER' => 'andreawindisch',
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history',
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d',
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert',
+    'SHLVL' => '1',
+    'NVM_CD_FLAGS' => '',
+    'COMPOSER_ALLOW_SUPERUSER' => '1',
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc',
+    'DDEV_DATABASE' => 'mysql:8.0',
+    'PGDATABASE' => 'db',
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof',
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer',
+    'DDEV_XDEBUG_ENABLED' => 'false',
+    'DDEV_DATABASE_FAMILY' => 'mysql',
+    'PGHOST' => 'db',
+    'DDEV_COMPOSER_ROOT' => '/var/www/html',
+    'DOCROOT' => 'web',
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1',
+    'PATH' => '~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin',
+    'HOST_DOCKER_INTERNAL_IP' => '',
+    'DEBIAN_FRONTEND' => 'noninteractive',
+    'DDEV_PROJECT_TYPE' => 'craftcms',
+    'DDEV_ROUTER_HTTPS_PORT' => '443',
+    'GOOS' => 'darwin',
+    'OLDPWD' => '/var/www/html',
+    '_' => '/usr/bin/php',
+    'PHP_SELF' => 'craft',
+    'SCRIPT_NAME' => 'craft',
+    'SCRIPT_FILENAME' => 'craft',
+    'PATH_TRANSLATED' => 'craft',
+    'DOCUMENT_ROOT' => '',
+    'REQUEST_TIME_FLOAT' => 1740990264.306054,
+    'REQUEST_TIME' => 1740990264,
+    'argv' => [
+        'craft',
+        'security/hash-password',
+        'admin',
+    ],
+    'argc' => 3,
+    'CRAFT_APP_ID' => '',
+    'CRAFT_ENVIRONMENT' => 'dev',
+    'CRAFT_DB_DRIVER' => 'mysql',
+    'CRAFT_DB_SERVER' => 'db',
+    'CRAFT_DB_PORT' => '3306',
+    'CRAFT_DB_DATABASE' => 'db',
+    'CRAFT_DB_USER' => 'db',
+    'CRAFT_DB_PASSWORD' => 'db',
+    'CRAFT_DB_SCHEMA' => 'public',
+    'CRAFT_DB_TABLE_PREFIX' => '',
+    'CRAFT_SECURITY_KEY' => 'zW___UhisewzqFepfZDmYiruCVFvlgaz',
+    'CRAFT_DEV_MODE' => 'true',
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true',
+    'CRAFT_DISALLOW_ROBOTS' => 'true',
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1',
+    'MAILPIT_SMTP_PORT' => '1025',
+    'CRAFT_WEB_ROOT' => '/var/www/html/web',
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site',
+    'GALLERY_PASSWORD_HASH' => 'admin',
+]
+[03-Mar-2025 00:27:12 America/Los_Angeles] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: Invalid path alias: @modules/gallery/controllers in /var/www/html/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Module.php(261): yii\BaseYii::getAlias('@modules/galler...')
+#1 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(245): yii\base\Module->getControllerPath()
+#2 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(240): yii\console\controllers\HelpController->getModuleCommands(Object(modules\gallery\GalleryModule))
+#3 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands(Object(craft\console\Application))
+#4 /var/www/html/vendor/yiisoft/yii2/console/UnknownCommandException.php(77): yii\console\controllers\HelpController->getCommands()
+#5 /var/www/html/vendor/yiisoft/yii2/console/ErrorHandler.php(36): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#6 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#7 /var/www/html/vendor/craftcms/cms/src/console/ErrorHandler.php(37): yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#8 [internal function]: craft\console\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#9 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'NVM_RC_VERSION' => '',
+    'DEPLOY_NAME' => 'local',
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm',
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm',
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0',
+    'IS_DDEV_PROJECT' => 'true',
+    'PHP_DEFAULT_VERSION' => '8.2',
+    'HOSTNAME' => 'kinderturnus-web',
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025',
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket',
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem',
+    'DOCKER_IP' => '127.0.0.1',
+    'PGPASSWORD' => 'db',
+    'MYSQL_PWD' => 'db',
+    'DDEV_DOCROOT' => 'web',
+    'PWD' => '/var/www/html',
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0',
+    'DDEV_FILES_DIR' => '',
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf',
+    'GOARCH' => 'arm64',
+    'DDEV_VERSION' => 'v1.23.5',
+    'TZ' => 'Europe/Amsterdam',
+    'HTTPS_EXPOSE' => '443:80,8026:8025',
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack',
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site',
+    'LINES' => '13',
+    'DDEV_SITENAME' => 'kinderturnus',
+    'HOME' => '/home/andreawindisch',
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site',
+    'LANG' => 'C.UTF-8',
+    'PHP_IDE_CONFIG' => 'serverName=kinderturnus.ddev.site',
+    'COLUMNS' => '95',
+    'DDEV_MUTAGEN_ENABLED' => 'true',
+    'PGUSER' => 'db',
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache',
+    'DDEV_ROUTER_HTTP_PORT' => '80',
+    'COMPOSER_PROCESS_TIMEOUT' => '2000',
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf',
+    'DDEV_FILES_DIRS' => '',
+    'HTTP_EXPOSE' => '80:80,8025:8025',
+    'NVM_DIR' => '/home/andreawindisch/.nvm',
+    'DDEV_PHP_VERSION' => '8.2',
+    'DDEV_TLD' => 'ddev.site',
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site',
+    'DDEV_PROJECT' => 'kinderturnus',
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site',
+    'TERM' => 'xterm',
+    'USER' => 'andreawindisch',
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history',
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d',
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert',
+    'SHLVL' => '1',
+    'NVM_CD_FLAGS' => '',
+    'COMPOSER_ALLOW_SUPERUSER' => '1',
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc',
+    'DDEV_DATABASE' => 'mysql:8.0',
+    'PGDATABASE' => 'db',
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof',
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer',
+    'DDEV_XDEBUG_ENABLED' => 'false',
+    'DDEV_DATABASE_FAMILY' => 'mysql',
+    'PGHOST' => 'db',
+    'DDEV_COMPOSER_ROOT' => '/var/www/html',
+    'DOCROOT' => 'web',
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1',
+    'PATH' => '~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin',
+    'HOST_DOCKER_INTERNAL_IP' => '',
+    'DEBIAN_FRONTEND' => 'noninteractive',
+    'DDEV_PROJECT_TYPE' => 'craftcms',
+    'DDEV_ROUTER_HTTPS_PORT' => '443',
+    'GOOS' => 'darwin',
+    'OLDPWD' => '/var/www/html',
+    '_' => '/usr/bin/php',
+    'PHP_SELF' => 'craft',
+    'SCRIPT_NAME' => 'craft',
+    'SCRIPT_FILENAME' => 'craft',
+    'PATH_TRANSLATED' => 'craft',
+    'DOCUMENT_ROOT' => '',
+    'REQUEST_TIME_FLOAT' => 1740990432.774093,
+    'REQUEST_TIME' => 1740990432,
+    'argv' => [
+        'craft',
+        'security/hash-password',
+        'admin',
+    ],
+    'argc' => 3,
+    'CRAFT_APP_ID' => '',
+    'CRAFT_ENVIRONMENT' => 'dev',
+    'CRAFT_DB_DRIVER' => 'mysql',
+    'CRAFT_DB_SERVER' => 'db',
+    'CRAFT_DB_PORT' => '3306',
+    'CRAFT_DB_DATABASE' => 'db',
+    'CRAFT_DB_USER' => 'db',
+    'CRAFT_DB_PASSWORD' => 'db',
+    'CRAFT_DB_SCHEMA' => 'public',
+    'CRAFT_DB_TABLE_PREFIX' => '',
+    'CRAFT_SECURITY_KEY' => 'zW___UhisewzqFepfZDmYiruCVFvlgaz',
+    'CRAFT_DEV_MODE' => 'true',
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true',
+    'CRAFT_DISALLOW_ROBOTS' => 'true',
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1',
+    'MAILPIT_SMTP_PORT' => '1025',
+    'CRAFT_WEB_ROOT' => '/var/www/html/web',
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site',
+    'GALLERY_PASSWORD_HASH' => 'admin',
+]
+[03-Mar-2025 00:28:44 America/Los_Angeles] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: Invalid path alias: @modules/gallery/controllers in /var/www/html/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Module.php(261): yii\BaseYii::getAlias('@modules/galler...')
+#1 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(245): yii\base\Module->getControllerPath()
+#2 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(240): yii\console\controllers\HelpController->getModuleCommands(Object(modules\gallery\GalleryModule))
+#3 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands(Object(craft\console\Application))
+#4 /var/www/html/vendor/yiisoft/yii2/console/UnknownCommandException.php(77): yii\console\controllers\HelpController->getCommands()
+#5 /var/www/html/vendor/yiisoft/yii2/console/ErrorHandler.php(36): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#6 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#7 /var/www/html/vendor/craftcms/cms/src/console/ErrorHandler.php(37): yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#8 [internal function]: craft\console\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#9 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'NVM_RC_VERSION' => '',
+    'DEPLOY_NAME' => 'local',
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm',
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm',
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0',
+    'IS_DDEV_PROJECT' => 'true',
+    'PHP_DEFAULT_VERSION' => '8.2',
+    'HOSTNAME' => 'kinderturnus-web',
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025',
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket',
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem',
+    'DOCKER_IP' => '127.0.0.1',
+    'PGPASSWORD' => 'db',
+    'MYSQL_PWD' => 'db',
+    'DDEV_DOCROOT' => 'web',
+    'PWD' => '/var/www/html',
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0',
+    'DDEV_FILES_DIR' => '',
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf',
+    'GOARCH' => 'arm64',
+    'DDEV_VERSION' => 'v1.23.5',
+    'TZ' => 'Europe/Amsterdam',
+    'HTTPS_EXPOSE' => '443:80,8026:8025',
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack',
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site',
+    'LINES' => '13',
+    'DDEV_SITENAME' => 'kinderturnus',
+    'HOME' => '/home/andreawindisch',
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site',
+    'LANG' => 'C.UTF-8',
+    'PHP_IDE_CONFIG' => 'serverName=kinderturnus.ddev.site',
+    'COLUMNS' => '95',
+    'DDEV_MUTAGEN_ENABLED' => 'true',
+    'PGUSER' => 'db',
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache',
+    'DDEV_ROUTER_HTTP_PORT' => '80',
+    'COMPOSER_PROCESS_TIMEOUT' => '2000',
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf',
+    'DDEV_FILES_DIRS' => '',
+    'HTTP_EXPOSE' => '80:80,8025:8025',
+    'NVM_DIR' => '/home/andreawindisch/.nvm',
+    'DDEV_PHP_VERSION' => '8.2',
+    'DDEV_TLD' => 'ddev.site',
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site',
+    'DDEV_PROJECT' => 'kinderturnus',
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site',
+    'TERM' => 'xterm',
+    'USER' => 'andreawindisch',
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history',
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d',
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert',
+    'SHLVL' => '1',
+    'NVM_CD_FLAGS' => '',
+    'COMPOSER_ALLOW_SUPERUSER' => '1',
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc',
+    'DDEV_DATABASE' => 'mysql:8.0',
+    'PGDATABASE' => 'db',
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof',
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer',
+    'DDEV_XDEBUG_ENABLED' => 'false',
+    'DDEV_DATABASE_FAMILY' => 'mysql',
+    'PGHOST' => 'db',
+    'DDEV_COMPOSER_ROOT' => '/var/www/html',
+    'DOCROOT' => 'web',
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1',
+    'PATH' => '~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin',
+    'HOST_DOCKER_INTERNAL_IP' => '',
+    'DEBIAN_FRONTEND' => 'noninteractive',
+    'DDEV_PROJECT_TYPE' => 'craftcms',
+    'DDEV_ROUTER_HTTPS_PORT' => '443',
+    'GOOS' => 'darwin',
+    'OLDPWD' => '/var/www/html',
+    '_' => '/usr/bin/php',
+    'PHP_SELF' => 'craft',
+    'SCRIPT_NAME' => 'craft',
+    'SCRIPT_FILENAME' => 'craft',
+    'PATH_TRANSLATED' => 'craft',
+    'DOCUMENT_ROOT' => '',
+    'REQUEST_TIME_FLOAT' => 1740990524.481427,
+    'REQUEST_TIME' => 1740990524,
+    'argv' => [
+        'craft',
+        'security/hash-password',
+        'admin',
+    ],
+    'argc' => 3,
+    'CRAFT_APP_ID' => '',
+    'CRAFT_ENVIRONMENT' => 'dev',
+    'CRAFT_DB_DRIVER' => 'mysql',
+    'CRAFT_DB_SERVER' => 'db',
+    'CRAFT_DB_PORT' => '3306',
+    'CRAFT_DB_DATABASE' => 'db',
+    'CRAFT_DB_USER' => 'db',
+    'CRAFT_DB_PASSWORD' => 'db',
+    'CRAFT_DB_SCHEMA' => 'public',
+    'CRAFT_DB_TABLE_PREFIX' => '',
+    'CRAFT_SECURITY_KEY' => 'zW___UhisewzqFepfZDmYiruCVFvlgaz',
+    'CRAFT_DEV_MODE' => 'true',
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true',
+    'CRAFT_DISALLOW_ROBOTS' => 'true',
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1',
+    'MAILPIT_SMTP_PORT' => '1025',
+    'CRAFT_WEB_ROOT' => '/var/www/html/web',
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site',
+    'GALLERY_PASSWORD_HASH' => 'admin',
+]
+[03-Mar-2025 00:31:22 America/Los_Angeles] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: Invalid path alias: @modules/gallery/controllers in /var/www/html/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Module.php(261): yii\BaseYii::getAlias('@modules/galler...')
+#1 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(245): yii\base\Module->getControllerPath()
+#2 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(240): yii\console\controllers\HelpController->getModuleCommands(Object(modules\gallery\GalleryModule))
+#3 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands(Object(craft\console\Application))
+#4 /var/www/html/vendor/yiisoft/yii2/console/UnknownCommandException.php(77): yii\console\controllers\HelpController->getCommands()
+#5 /var/www/html/vendor/yiisoft/yii2/console/ErrorHandler.php(36): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#6 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#7 /var/www/html/vendor/craftcms/cms/src/console/ErrorHandler.php(37): yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#8 [internal function]: craft\console\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#9 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'NVM_RC_VERSION' => '',
+    'DEPLOY_NAME' => 'local',
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm',
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm',
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0',
+    'IS_DDEV_PROJECT' => 'true',
+    'PHP_DEFAULT_VERSION' => '8.2',
+    'HOSTNAME' => 'kinderturnus-web',
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025',
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket',
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem',
+    'DOCKER_IP' => '127.0.0.1',
+    'PGPASSWORD' => 'db',
+    'MYSQL_PWD' => 'db',
+    'DDEV_DOCROOT' => 'web',
+    'PWD' => '/var/www/html',
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0',
+    'DDEV_FILES_DIR' => '',
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf',
+    'GOARCH' => 'arm64',
+    'DDEV_VERSION' => 'v1.23.5',
+    'TZ' => 'Europe/Amsterdam',
+    'HTTPS_EXPOSE' => '443:80,8026:8025',
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack',
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site',
+    'LINES' => '13',
+    'DDEV_SITENAME' => 'kinderturnus',
+    'HOME' => '/home/andreawindisch',
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site',
+    'LANG' => 'C.UTF-8',
+    'PHP_IDE_CONFIG' => 'serverName=kinderturnus.ddev.site',
+    'COLUMNS' => '95',
+    'DDEV_MUTAGEN_ENABLED' => 'true',
+    'PGUSER' => 'db',
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache',
+    'DDEV_ROUTER_HTTP_PORT' => '80',
+    'COMPOSER_PROCESS_TIMEOUT' => '2000',
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf',
+    'DDEV_FILES_DIRS' => '',
+    'HTTP_EXPOSE' => '80:80,8025:8025',
+    'NVM_DIR' => '/home/andreawindisch/.nvm',
+    'DDEV_PHP_VERSION' => '8.2',
+    'DDEV_TLD' => 'ddev.site',
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site',
+    'DDEV_PROJECT' => 'kinderturnus',
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site',
+    'TERM' => 'xterm',
+    'USER' => 'andreawindisch',
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history',
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d',
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert',
+    'SHLVL' => '1',
+    'NVM_CD_FLAGS' => '',
+    'COMPOSER_ALLOW_SUPERUSER' => '1',
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc',
+    'DDEV_DATABASE' => 'mysql:8.0',
+    'PGDATABASE' => 'db',
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof',
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer',
+    'DDEV_XDEBUG_ENABLED' => 'false',
+    'DDEV_DATABASE_FAMILY' => 'mysql',
+    'PGHOST' => 'db',
+    'DDEV_COMPOSER_ROOT' => '/var/www/html',
+    'DOCROOT' => 'web',
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1',
+    'PATH' => '~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin',
+    'HOST_DOCKER_INTERNAL_IP' => '',
+    'DEBIAN_FRONTEND' => 'noninteractive',
+    'DDEV_PROJECT_TYPE' => 'craftcms',
+    'DDEV_ROUTER_HTTPS_PORT' => '443',
+    'GOOS' => 'darwin',
+    'OLDPWD' => '/var/www/html',
+    '_' => '/usr/bin/php',
+    'PHP_SELF' => 'craft',
+    'SCRIPT_NAME' => 'craft',
+    'SCRIPT_FILENAME' => 'craft',
+    'PATH_TRANSLATED' => 'craft',
+    'DOCUMENT_ROOT' => '',
+    'REQUEST_TIME_FLOAT' => 1740990682.373405,
+    'REQUEST_TIME' => 1740990682,
+    'argv' => [
+        'craft',
+        'security/hash-password',
+        'master',
+    ],
+    'argc' => 3,
+    'CRAFT_APP_ID' => '',
+    'CRAFT_ENVIRONMENT' => 'dev',
+    'CRAFT_DB_DRIVER' => 'mysql',
+    'CRAFT_DB_SERVER' => 'db',
+    'CRAFT_DB_PORT' => '3306',
+    'CRAFT_DB_DATABASE' => 'db',
+    'CRAFT_DB_USER' => 'db',
+    'CRAFT_DB_PASSWORD' => 'db',
+    'CRAFT_DB_SCHEMA' => 'public',
+    'CRAFT_DB_TABLE_PREFIX' => '',
+    'CRAFT_SECURITY_KEY' => 'zW___UhisewzqFepfZDmYiruCVFvlgaz',
+    'CRAFT_DEV_MODE' => 'true',
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true',
+    'CRAFT_DISALLOW_ROBOTS' => 'true',
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1',
+    'MAILPIT_SMTP_PORT' => '1025',
+    'CRAFT_WEB_ROOT' => '/var/www/html/web',
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site',
+    'GALLERY_PASSWORD_HASH' => 'admin',
+]
+[03-Mar-2025 00:31:41 America/Los_Angeles] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: Invalid path alias: @modules/gallery/controllers in /var/www/html/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Module.php(261): yii\BaseYii::getAlias('@modules/galler...')
+#1 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(245): yii\base\Module->getControllerPath()
+#2 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(240): yii\console\controllers\HelpController->getModuleCommands(Object(modules\gallery\GalleryModule))
+#3 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands(Object(craft\console\Application))
+#4 /var/www/html/vendor/yiisoft/yii2/console/UnknownCommandException.php(77): yii\console\controllers\HelpController->getCommands()
+#5 /var/www/html/vendor/yiisoft/yii2/console/ErrorHandler.php(36): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#6 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#7 /var/www/html/vendor/craftcms/cms/src/console/ErrorHandler.php(37): yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#8 [internal function]: craft\console\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#9 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'NVM_RC_VERSION' => '',
+    'DEPLOY_NAME' => 'local',
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm',
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm',
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0',
+    'IS_DDEV_PROJECT' => 'true',
+    'PHP_DEFAULT_VERSION' => '8.2',
+    'HOSTNAME' => 'kinderturnus-web',
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025',
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket',
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem',
+    'DOCKER_IP' => '127.0.0.1',
+    'PGPASSWORD' => 'db',
+    'MYSQL_PWD' => 'db',
+    'DDEV_DOCROOT' => 'web',
+    'PWD' => '/var/www/html',
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0',
+    'DDEV_FILES_DIR' => '',
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf',
+    'GOARCH' => 'arm64',
+    'DDEV_VERSION' => 'v1.23.5',
+    'TZ' => 'Europe/Amsterdam',
+    'HTTPS_EXPOSE' => '443:80,8026:8025',
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack',
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site',
+    'LINES' => '13',
+    'DDEV_SITENAME' => 'kinderturnus',
+    'HOME' => '/home/andreawindisch',
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site',
+    'LANG' => 'C.UTF-8',
+    'PHP_IDE_CONFIG' => 'serverName=kinderturnus.ddev.site',
+    'COLUMNS' => '95',
+    'DDEV_MUTAGEN_ENABLED' => 'true',
+    'PGUSER' => 'db',
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache',
+    'DDEV_ROUTER_HTTP_PORT' => '80',
+    'COMPOSER_PROCESS_TIMEOUT' => '2000',
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf',
+    'DDEV_FILES_DIRS' => '',
+    'HTTP_EXPOSE' => '80:80,8025:8025',
+    'NVM_DIR' => '/home/andreawindisch/.nvm',
+    'DDEV_PHP_VERSION' => '8.2',
+    'DDEV_TLD' => 'ddev.site',
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site',
+    'DDEV_PROJECT' => 'kinderturnus',
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site',
+    'TERM' => 'xterm',
+    'USER' => 'andreawindisch',
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history',
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d',
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert',
+    'SHLVL' => '1',
+    'NVM_CD_FLAGS' => '',
+    'COMPOSER_ALLOW_SUPERUSER' => '1',
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc',
+    'DDEV_DATABASE' => 'mysql:8.0',
+    'PGDATABASE' => 'db',
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof',
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer',
+    'DDEV_XDEBUG_ENABLED' => 'false',
+    'DDEV_DATABASE_FAMILY' => 'mysql',
+    'PGHOST' => 'db',
+    'DDEV_COMPOSER_ROOT' => '/var/www/html',
+    'DOCROOT' => 'web',
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1',
+    'PATH' => '~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin',
+    'HOST_DOCKER_INTERNAL_IP' => '',
+    'DEBIAN_FRONTEND' => 'noninteractive',
+    'DDEV_PROJECT_TYPE' => 'craftcms',
+    'DDEV_ROUTER_HTTPS_PORT' => '443',
+    'GOOS' => 'darwin',
+    'OLDPWD' => '/var/www/html',
+    '_' => '/usr/bin/php',
+    'PHP_SELF' => 'craft',
+    'SCRIPT_NAME' => 'craft',
+    'SCRIPT_FILENAME' => 'craft',
+    'PATH_TRANSLATED' => 'craft',
+    'DOCUMENT_ROOT' => '',
+    'REQUEST_TIME_FLOAT' => 1740990701.078986,
+    'REQUEST_TIME' => 1740990701,
+    'argv' => [
+        'craft',
+        'security/hash-password',
+    ],
+    'argc' => 2,
+    'CRAFT_APP_ID' => '',
+    'CRAFT_ENVIRONMENT' => 'dev',
+    'CRAFT_DB_DRIVER' => 'mysql',
+    'CRAFT_DB_SERVER' => 'db',
+    'CRAFT_DB_PORT' => '3306',
+    'CRAFT_DB_DATABASE' => 'db',
+    'CRAFT_DB_USER' => 'db',
+    'CRAFT_DB_PASSWORD' => 'db',
+    'CRAFT_DB_SCHEMA' => 'public',
+    'CRAFT_DB_TABLE_PREFIX' => '',
+    'CRAFT_SECURITY_KEY' => 'zW___UhisewzqFepfZDmYiruCVFvlgaz',
+    'CRAFT_DEV_MODE' => 'true',
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true',
+    'CRAFT_DISALLOW_ROBOTS' => 'true',
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1',
+    'MAILPIT_SMTP_PORT' => '1025',
+    'CRAFT_WEB_ROOT' => '/var/www/html/web',
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site',
+    'GALLERY_PASSWORD_HASH' => 'admin',
+]
+[03-Mar-2025 00:37:13 America/Los_Angeles] An Error occurred while handling another error:
+yii\base\InvalidArgumentException: Invalid path alias: @modules/gallery/controllers in /var/www/html/vendor/yiisoft/yii2/BaseYii.php:154
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/base/Module.php(261): yii\BaseYii::getAlias('@modules/galler...')
+#1 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(245): yii\base\Module->getControllerPath()
+#2 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(240): yii\console\controllers\HelpController->getModuleCommands(Object(modules\gallery\GalleryModule))
+#3 /var/www/html/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands(Object(craft\console\Application))
+#4 /var/www/html/vendor/yiisoft/yii2/console/UnknownCommandException.php(77): yii\console\controllers\HelpController->getCommands()
+#5 /var/www/html/vendor/yiisoft/yii2/console/ErrorHandler.php(36): yii\console\UnknownCommandException->getSuggestedAlternatives()
+#6 /var/www/html/vendor/yiisoft/yii2/base/ErrorHandler.php(152): yii\console\ErrorHandler->renderException(Object(yii\console\UnknownCommandException))
+#7 /var/www/html/vendor/craftcms/cms/src/console/ErrorHandler.php(37): yii\base\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#8 [internal function]: craft\console\ErrorHandler->handleException(Object(yii\console\UnknownCommandException))
+#9 {main}
+Previous exception:
+yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main}
+$_SERVER = [
+    'NVM_RC_VERSION' => '',
+    'DEPLOY_NAME' => 'local',
+    'DDEV_WEBSERVER_TYPE' => 'nginx-fpm',
+    'npm_config_cache' => '/mnt/ddev-global-cache/npm',
+    'COREPACK_ENABLE_DOWNLOAD_PROMPT' => '0',
+    'IS_DDEV_PROJECT' => 'true',
+    'PHP_DEFAULT_VERSION' => '8.2',
+    'HOSTNAME' => 'kinderturnus-web',
+    'MH_SMTP_BIND_ADDR' => '127.0.0.1:1025',
+    'SSH_AUTH_SOCK' => '/home/.ssh-agent/socket',
+    'NODE_EXTRA_CA_CERTS' => '/mnt/ddev-global-cache/mkcert/rootCA.pem',
+    'DOCKER_IP' => '127.0.0.1',
+    'PGPASSWORD' => 'db',
+    'MYSQL_PWD' => 'db',
+    'DDEV_DOCROOT' => 'web',
+    'PWD' => '/var/www/html',
+    'PLATFORMSH_CLI_UPDATES_CHECK' => '0',
+    'DDEV_FILES_DIR' => '',
+    'APACHE_SITE_TEMPLATE' => '/etc/apache2/apache-site.conf',
+    'GOARCH' => 'arm64',
+    'DDEV_VERSION' => 'v1.23.5',
+    'TZ' => 'Europe/Amsterdam',
+    'HTTPS_EXPOSE' => '443:80,8026:8025',
+    'COREPACK_HOME' => '/mnt/ddev-global-cache/corepack',
+    'DDEV_PRIMARY_URL' => 'http://kinderturnus.ddev.site',
+    'LINES' => '13',
+    'DDEV_SITENAME' => 'kinderturnus',
+    'HOME' => '/home/andreawindisch',
+    'DRUSH_OPTIONS_URI' => 'http://kinderturnus.ddev.site',
+    'LANG' => 'C.UTF-8',
+    'PHP_IDE_CONFIG' => 'serverName=kinderturnus.ddev.site',
+    'COLUMNS' => '95',
+    'DDEV_MUTAGEN_ENABLED' => 'true',
+    'PGUSER' => 'db',
+    'TERMINUS_CACHE_DIR' => '/mnt/ddev-global-cache/terminus/cache',
+    'DDEV_ROUTER_HTTP_PORT' => '80',
+    'COMPOSER_PROCESS_TIMEOUT' => '2000',
+    'NGINX_SITE_TEMPLATE' => '/etc/nginx/nginx-site.conf',
+    'DDEV_FILES_DIRS' => '',
+    'HTTP_EXPOSE' => '80:80,8025:8025',
+    'NVM_DIR' => '/home/andreawindisch/.nvm',
+    'DDEV_PHP_VERSION' => '8.2',
+    'DDEV_TLD' => 'ddev.site',
+    'DDEV_HOSTNAME' => 'kinderturnus.ddev.site',
+    'DDEV_PROJECT' => 'kinderturnus',
+    'VIRTUAL_HOST' => 'kinderturnus.ddev.site',
+    'TERM' => 'xterm',
+    'USER' => 'andreawindisch',
+    'MYSQL_HISTFILE' => '/mnt/ddev-global-cache/mysqlhistory/kinderturnus-web/mysql_history',
+    'DDEV_WEB_ENTRYPOINT' => '/mnt/ddev_config/web-entrypoint.d',
+    'CAROOT' => '/mnt/ddev-global-cache/mkcert',
+    'SHLVL' => '1',
+    'NVM_CD_FLAGS' => '',
+    'COMPOSER_ALLOW_SUPERUSER' => '1',
+    'BASH_ENV' => '/etc/bash.nointeractive.bashrc',
+    'DDEV_DATABASE' => 'mysql:8.0',
+    'PGDATABASE' => 'db',
+    'XHPROF_OUTPUT_DIR' => '/tmp/xhprof',
+    'COMPOSER_CACHE_DIR' => '/mnt/ddev-global-cache/composer',
+    'DDEV_XDEBUG_ENABLED' => 'false',
+    'DDEV_DATABASE_FAMILY' => 'mysql',
+    'PGHOST' => 'db',
+    'DDEV_COMPOSER_ROOT' => '/var/www/html',
+    'DOCROOT' => 'web',
+    'TERMINUS_HIDE_UPDATE_MESSAGE' => '1',
+    'PATH' => '~/bin:/var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/var/www/html/bin',
+    'HOST_DOCKER_INTERNAL_IP' => '',
+    'DEBIAN_FRONTEND' => 'noninteractive',
+    'DDEV_PROJECT_TYPE' => 'craftcms',
+    'DDEV_ROUTER_HTTPS_PORT' => '443',
+    'GOOS' => 'darwin',
+    'OLDPWD' => '/var/www/html',
+    '_' => '/usr/bin/php',
+    'PHP_SELF' => 'craft',
+    'SCRIPT_NAME' => 'craft',
+    'SCRIPT_FILENAME' => 'craft',
+    'PATH_TRANSLATED' => 'craft',
+    'DOCUMENT_ROOT' => '',
+    'REQUEST_TIME_FLOAT' => 1740991033.548102,
+    'REQUEST_TIME' => 1740991033,
+    'argv' => [
+        'craft',
+        'security/hash-password',
+        'admin',
+    ],
+    'argc' => 3,
+    'CRAFT_APP_ID' => '',
+    'CRAFT_ENVIRONMENT' => 'dev',
+    'CRAFT_DB_DRIVER' => 'mysql',
+    'CRAFT_DB_SERVER' => 'db',
+    'CRAFT_DB_PORT' => '3306',
+    'CRAFT_DB_DATABASE' => 'db',
+    'CRAFT_DB_USER' => 'db',
+    'CRAFT_DB_PASSWORD' => 'db',
+    'CRAFT_DB_SCHEMA' => 'public',
+    'CRAFT_DB_TABLE_PREFIX' => '',
+    'CRAFT_SECURITY_KEY' => 'zW___UhisewzqFepfZDmYiruCVFvlgaz',
+    'CRAFT_DEV_MODE' => 'true',
+    'CRAFT_ALLOW_ADMIN_CHANGES' => 'true',
+    'CRAFT_DISALLOW_ROBOTS' => 'true',
+    'MAILPIT_SMTP_HOSTNAME' => '127.0.0.1',
+    'MAILPIT_SMTP_PORT' => '1025',
+    'CRAFT_WEB_ROOT' => '/var/www/html/web',
+    'PRIMARY_SITE_URL' => 'http://kinderturnus.ddev.site',
+    'GALLERY_PASSWORD_HASH' => 'admin',
+]

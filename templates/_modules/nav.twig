@@ -4,7 +4,8 @@
 			{% for navItem in globalsNav.navigation %}
 				<li>
 					<a
-						href="{{navItem.url}}">
+						href="{{navItem.url}}"
+						class="{% if craft.app.request.getSegment(1) == 'contact' %}active{% endif %}">
 						{{navItem.title}}
 					</a>
 				</li>

@@ -1,0 +1,282 @@
+2025-03-03 00:07:02 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186016} 
+2025-03-03 00:07:02 [console.ERROR] [yii\di\NotInstantiableException] ReflectionException: Class "modules\gallery\GalleryModule" does not exist in /var/www/html/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct('modules\\gallery...')
+#1 /var/www/html/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies('modules\\gallery...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('modules\\gallery...', Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('modules\\gallery...', Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(313): yii\base\Module->getModule('gallery')
+#6 /var/www/html/vendor/craftcms/cms/src/console/Application.php(66): yii\base\Application->bootstrap()
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(271): craft\console\Application->bootstrap()
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(124): yii\base\Application->init()
+#9 /var/www/html/vendor/craftcms/cms/src/console/Application.php(52): yii\console\Application->init()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\console\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/vendor/yiisoft/yii2/console/Application.php(89): yii\base\Application->__construct(Array)
+#13 [internal function]: yii\console\Application->__construct(Array)
+#14 /var/www/html/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('craft\\console\\A...', Array, Array)
+#16 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\console\\A...', Array, Array)
+#17 /var/www/html/vendor/craftcms/cms/src/Craft.php(70): yii\BaseYii::createObject(Array, Array)
+#18 /var/www/html/vendor/craftcms/cms/bootstrap/bootstrap.php(342): Craft::createObject(Array)
+#19 /var/www/html/vendor/craftcms/cms/bootstrap/console.php(42): require('/var/www/html/v...')
+#20 /var/www/html/craft(12): require('/var/www/html/v...')
+#21 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "modules\gallery\GalleryModule". in /var/www/html/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies('modules\\gallery...')
+#1 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('modules\\gallery...', Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('modules\\gallery...', Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(313): yii\base\Module->getModule('gallery')
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(66): yii\base\Application->bootstrap()
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(271): craft\console\Application->bootstrap()
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(124): yii\base\Application->init()
+#8 /var/www/html/vendor/craftcms/cms/src/console/Application.php(52): yii\console\Application->init()
+#9 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\console\Application->init()
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#11 /var/www/html/vendor/yiisoft/yii2/console/Application.php(89): yii\base\Application->__construct(Array)
+#12 [internal function]: yii\console\Application->__construct(Array)
+#13 /var/www/html/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#14 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('craft\\console\\A...', Array, Array)
+#15 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\console\\A...', Array, Array)
+#16 /var/www/html/vendor/craftcms/cms/src/Craft.php(70): yii\BaseYii::createObject(Array, Array)
+#17 /var/www/html/vendor/craftcms/cms/bootstrap/bootstrap.php(342): Craft::createObject(Array)
+#18 /var/www/html/vendor/craftcms/cms/bootstrap/console.php(42): require('/var/www/html/v...')
+#19 /var/www/html/craft(12): require('/var/www/html/v...')
+#20 {main} {"memory":2824272,"exception":"[object] (yii\\di\\NotInstantiableException(code: 0): Failed to instantiate component or class \"modules\\gallery\\GalleryModule\". at /var/www/html/vendor/yiisoft/yii2/di/Container.php:509)
+[previous exception] [object] (ReflectionException(code: -1): Class \"modules\\gallery\\GalleryModule\" does not exist at /var/www/html/vendor/yiisoft/yii2/di/Container.php:507)"} 
+2025-03-03 00:13:39 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186088} 
+2025-03-03 00:13:39 [console.ERROR] [yii\di\NotInstantiableException] ReflectionException: Class "modules\gallery\GalleryModule" does not exist in /var/www/html/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct('modules\\gallery...')
+#1 /var/www/html/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies('modules\\gallery...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('modules\\gallery...', Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('modules\\gallery...', Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(313): yii\base\Module->getModule('gallery')
+#6 /var/www/html/vendor/craftcms/cms/src/console/Application.php(66): yii\base\Application->bootstrap()
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(271): craft\console\Application->bootstrap()
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(124): yii\base\Application->init()
+#9 /var/www/html/vendor/craftcms/cms/src/console/Application.php(52): yii\console\Application->init()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\console\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/vendor/yiisoft/yii2/console/Application.php(89): yii\base\Application->__construct(Array)
+#13 [internal function]: yii\console\Application->__construct(Array)
+#14 /var/www/html/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('craft\\console\\A...', Array, Array)
+#16 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\console\\A...', Array, Array)
+#17 /var/www/html/vendor/craftcms/cms/src/Craft.php(70): yii\BaseYii::createObject(Array, Array)
+#18 /var/www/html/vendor/craftcms/cms/bootstrap/bootstrap.php(342): Craft::createObject(Array)
+#19 /var/www/html/vendor/craftcms/cms/bootstrap/console.php(42): require('/var/www/html/v...')
+#20 /var/www/html/craft(12): require('/var/www/html/v...')
+#21 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "modules\gallery\GalleryModule". in /var/www/html/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies('modules\\gallery...')
+#1 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('modules\\gallery...', Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('modules\\gallery...', Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(313): yii\base\Module->getModule('gallery')
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(66): yii\base\Application->bootstrap()
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(271): craft\console\Application->bootstrap()
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(124): yii\base\Application->init()
+#8 /var/www/html/vendor/craftcms/cms/src/console/Application.php(52): yii\console\Application->init()
+#9 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\console\Application->init()
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#11 /var/www/html/vendor/yiisoft/yii2/console/Application.php(89): yii\base\Application->__construct(Array)
+#12 [internal function]: yii\console\Application->__construct(Array)
+#13 /var/www/html/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#14 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('craft\\console\\A...', Array, Array)
+#15 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\console\\A...', Array, Array)
+#16 /var/www/html/vendor/craftcms/cms/src/Craft.php(70): yii\BaseYii::createObject(Array, Array)
+#17 /var/www/html/vendor/craftcms/cms/bootstrap/bootstrap.php(342): Craft::createObject(Array)
+#18 /var/www/html/vendor/craftcms/cms/bootstrap/console.php(42): require('/var/www/html/v...')
+#19 /var/www/html/craft(12): require('/var/www/html/v...')
+#20 {main} {"memory":2824344,"exception":"[object] (yii\\di\\NotInstantiableException(code: 0): Failed to instantiate component or class \"modules\\gallery\\GalleryModule\". at /var/www/html/vendor/yiisoft/yii2/di/Container.php:509)
+[previous exception] [object] (ReflectionException(code: -1): Class \"modules\\gallery\\GalleryModule\" does not exist at /var/www/html/vendor/yiisoft/yii2/di/Container.php:507)"} 
+2025-03-03 00:18:20 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186088} 
+2025-03-03 00:18:20 [console.ERROR] [yii\di\NotInstantiableException] ReflectionException: Class "modules\gallery\GalleryModule" does not exist in /var/www/html/vendor/yiisoft/yii2/di/Container.php:507
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/di/Container.php(507): ReflectionClass->__construct('modules\\gallery...')
+#1 /var/www/html/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies('modules\\gallery...')
+#2 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('modules\\gallery...', Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('modules\\gallery...', Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/vendor/yiisoft/yii2/base/Application.php(313): yii\base\Module->getModule('gallery')
+#6 /var/www/html/vendor/craftcms/cms/src/console/Application.php(66): yii\base\Application->bootstrap()
+#7 /var/www/html/vendor/yiisoft/yii2/base/Application.php(271): craft\console\Application->bootstrap()
+#8 /var/www/html/vendor/yiisoft/yii2/console/Application.php(124): yii\base\Application->init()
+#9 /var/www/html/vendor/craftcms/cms/src/console/Application.php(52): yii\console\Application->init()
+#10 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\console\Application->init()
+#11 /var/www/html/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#12 /var/www/html/vendor/yiisoft/yii2/console/Application.php(89): yii\base\Application->__construct(Array)
+#13 [internal function]: yii\console\Application->__construct(Array)
+#14 /var/www/html/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#15 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('craft\\console\\A...', Array, Array)
+#16 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\console\\A...', Array, Array)
+#17 /var/www/html/vendor/craftcms/cms/src/Craft.php(70): yii\BaseYii::createObject(Array, Array)
+#18 /var/www/html/vendor/craftcms/cms/bootstrap/bootstrap.php(342): Craft::createObject(Array)
+#19 /var/www/html/vendor/craftcms/cms/bootstrap/console.php(42): require('/var/www/html/v...')
+#20 /var/www/html/craft(12): require('/var/www/html/v...')
+#21 {main}
+
+Next yii\di\NotInstantiableException: Failed to instantiate component or class "modules\gallery\GalleryModule". in /var/www/html/vendor/yiisoft/yii2/di/Container.php:509
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/di/Container.php(385): yii\di\Container->getDependencies('modules\\gallery...')
+#1 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('modules\\gallery...', Array, Array)
+#2 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('modules\\gallery...', Array, Array)
+#3 /var/www/html/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject(Array, Array)
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(313): yii\base\Module->getModule('gallery')
+#5 /var/www/html/vendor/craftcms/cms/src/console/Application.php(66): yii\base\Application->bootstrap()
+#6 /var/www/html/vendor/yiisoft/yii2/base/Application.php(271): craft\console\Application->bootstrap()
+#7 /var/www/html/vendor/yiisoft/yii2/console/Application.php(124): yii\base\Application->init()
+#8 /var/www/html/vendor/craftcms/cms/src/console/Application.php(52): yii\console\Application->init()
+#9 /var/www/html/vendor/yiisoft/yii2/base/BaseObject.php(109): craft\console\Application->init()
+#10 /var/www/html/vendor/yiisoft/yii2/base/Application.php(204): yii\base\BaseObject->__construct(Array)
+#11 /var/www/html/vendor/yiisoft/yii2/console/Application.php(89): yii\base\Application->__construct(Array)
+#12 [internal function]: yii\console\Application->__construct(Array)
+#13 /var/www/html/vendor/yiisoft/yii2/di/Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#14 /var/www/html/vendor/yiisoft/yii2/di/Container.php(170): yii\di\Container->build('craft\\console\\A...', Array, Array)
+#15 /var/www/html/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get('craft\\console\\A...', Array, Array)
+#16 /var/www/html/vendor/craftcms/cms/src/Craft.php(70): yii\BaseYii::createObject(Array, Array)
+#17 /var/www/html/vendor/craftcms/cms/bootstrap/bootstrap.php(342): Craft::createObject(Array)
+#18 /var/www/html/vendor/craftcms/cms/bootstrap/console.php(42): require('/var/www/html/v...')
+#19 /var/www/html/craft(12): require('/var/www/html/v...')
+#20 {main} {"memory":2824344,"exception":"[object] (yii\\di\\NotInstantiableException(code: 0): Failed to instantiate component or class \"modules\\gallery\\GalleryModule\". at /var/www/html/vendor/yiisoft/yii2/di/Container.php:509)
+[previous exception] [object] (ReflectionException(code: -1): Class \"modules\\gallery\\GalleryModule\" does not exist at /var/www/html/vendor/yiisoft/yii2/di/Container.php:507)"} 
+2025-03-03 00:24:24 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186168} 
+2025-03-03 00:24:24 [console.INFO] [modules\gallery\GalleryModule::init] GalleryModule initialized {"memory":3069176} 
+2025-03-03 00:24:24 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3490784,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/base/Module.php:561)"} 
+2025-03-03 00:27:12 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186168} 
+2025-03-03 00:27:12 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized {"memory":3069176} 
+2025-03-03 00:27:12 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3490784,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/base/Module.php:561)"} 
+2025-03-03 00:28:37 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186128} 
+2025-03-03 00:28:37 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized {"memory":3069136} 
+2025-03-03 00:28:44 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186168} 
+2025-03-03 00:28:44 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized {"memory":3069176} 
+2025-03-03 00:28:44 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3490784,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/base/Module.php:561)"} 
+2025-03-03 00:31:03 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186128} 
+2025-03-03 00:31:03 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized {"memory":3069136} 
+2025-03-03 00:31:22 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186168} 
+2025-03-03 00:31:22 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized {"memory":3069176} 
+2025-03-03 00:31:22 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3490784,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/base/Module.php:561)"} 
+2025-03-03 00:31:41 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2186136} 
+2025-03-03 00:31:41 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized {"memory":3069144} 
+2025-03-03 00:31:41 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3490360,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/base/Module.php:561)"} 
+2025-03-03 00:36:09 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2187160} 
+2025-03-03 00:36:09 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized for Console {"memory":3070168} 
+2025-03-03 00:37:13 [console.INFO] [yii\db\Connection::open] Opening DB connection: mysql:host=db;dbname=db;port=3306 {"memory":2187200} 
+2025-03-03 00:37:13 [console.INFO] [modules\gallery\GalleryModule::init] ✅ GalleryModule initialized for Console {"memory":3070208} 
+2025-03-03 00:37:13 [console.ERROR] [yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/base/Module.php:561
+Stack trace:
+#0 /var/www/html/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#3 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#5 /var/www/html/craft(13): yii\base\Application->run()
+#6 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "security/hash-password". in /var/www/html/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /var/www/html/vendor/craftcms/cms/src/console/Application.php(91): yii\console\Application->runAction('security/hash-p...', Array)
+#1 /var/www/html/vendor/yiisoft/yii2/console/Application.php(147): craft\console\Application->runAction('security/hash-p...', Array)
+#2 /var/www/html/vendor/craftcms/cms/src/console/Application.php(122): yii\console\Application->handleRequest(Object(craft\console\Request))
+#3 /var/www/html/vendor/yiisoft/yii2/base/Application.php(384): craft\console\Application->handleRequest(Object(craft\console\Request))
+#4 /var/www/html/craft(13): yii\base\Application->run()
+#5 {main} {"memory":3492112,"exception":"[object] (yii\\console\\UnknownCommandException(code: 0): Unknown command \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/console/Application.php:183)
+[previous exception] [object] (yii\\base\\InvalidRouteException(code: 0): Unable to resolve the request \"security/hash-password\". at /var/www/html/vendor/yiisoft/yii2/base/Module.php:561)"} 

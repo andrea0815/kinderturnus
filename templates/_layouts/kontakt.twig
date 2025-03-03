@@ -3,14 +3,17 @@
 {% block bodyblock %}
 	{% include "_modules/header.twig" %}
 
-	{% if entry.title|length %}
-		<h2>{{ entry.title }}</h2>
-	{% endif %}
+	<div class="panel">
+		{% if entry.title|length %}
+			<h2>{{ entry.title }}</h2>
+		{% endif %}
 
-	{% include "_modules/footer.twig" %}
+		{% if entry.email|length %}
+			<a href="mailto:{{entry.email}}">{{ entry.email }}</a>
+		{% endif %}
+	</div>
+
 
 {% endblock %}
 
-{% block scriptblock %}
-
-{% endblock %}
+{% block scriptblock %}{% endblock %}

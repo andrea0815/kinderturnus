@@ -1,0 +1,9 @@
+headingLevels: false
+name: all
+toolbar:
+  - bold
+  - italic
+  - link
+  - bulletedList
+  - '|'
+  - sourceEditing
