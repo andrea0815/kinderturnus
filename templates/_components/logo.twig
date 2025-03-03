@@ -1,7 +1,5 @@
 {% if globalsGeneral.websiteLogo|length %}
-	<div class="logo">
-        {# {% include "_svgs/logo.twig" %} #}
-        {% set image = globalsGeneral.websiteLogo.one %}
-        <img src="{{ image.getUrl() }}" alt="">
-    </div>
+    <a href="{{ siteUrl() }}">
+        {% include "_svgs/logo.twig" %}
+    </a>
 {% endif %}

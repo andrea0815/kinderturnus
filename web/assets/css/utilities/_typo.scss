@@ -1,4 +1,6 @@
 @use 'variables' as v;
+@use 'mediaquery-library' as m;
+
 
 @mixin text-default($color: v.$color-black) {
     font-size: v.$text-size-default;
@@ -62,4 +64,8 @@ h3 {
 
 .column-2 {
     column-count: 2;
+
+    @include m.media('<=tablet') {
+        column-count: 1;
+    }
 }

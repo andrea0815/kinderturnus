@@ -1,4 +1,6 @@
 @use '../utilities/utilities' as u;
+@use '../utilities/mediaquery-library' as m;
+
 
 #programm {
     ul {
@@ -24,6 +26,10 @@
                 height: 100px;
             }
 
+            @include m.media('<=phone') {
+                @include u.flex-column(center, center);
+            }
+
 
         }
 
@@ -47,6 +53,11 @@
             height: 100%;
             width: 100%;
         }
+    }
+
+    @include m.media('<=tablet') {
+        @include u.flex-column(start, stretch);
+        flex-direction: column-reverse;
     }
 }
 

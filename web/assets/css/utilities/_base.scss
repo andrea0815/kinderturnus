@@ -1,6 +1,7 @@
 @use 'variables' as var;
 @use 'utility-classes' as util;
 @use "sass:color";
+@use '../utilities/mediaquery-library' as m;
 
 *,
 *::before,
@@ -85,26 +86,6 @@ p {
     @include util.size-full-screen(fixed);
     @include util.flex-center;
     @include util.animation($name: none, $duration: var.$timing-500);
-}
-
-.logo {
-    grid-column: 1;
-    margin: var.$space-4; /* Adjvarst as needed */
-    margin-top: var.$space-6 + 15;
-    display: flex; /* Ensures proper scaling */
-    max-width: 200px;
-    max-height: 200px;
-    justify-self: end;
-    
-
-    img {
-        width: 100%;  /* Makes it take the full column width */
-        height: auto; /* Maintains aspect ratio */
-        max-width: 100%; /* Ensures it doesn't exceed container width */
-        max-height: 100%; /* Ensures it doesn't exceed container height */
-        object-fit: contain;
-        transform: translateY(-55%);
-    }
 }
 
 .arrow {

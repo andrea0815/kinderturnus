@@ -109,25 +109,6 @@ p {
   animation-fill-mode: forwards;
 }
 
-.logo {
-  grid-column: 1;
-  margin: 20px; /* Adjvarst as needed */
-  margin-top: 85px;
-  display: flex; /* Ensures proper scaling */
-  max-width: 200px;
-  max-height: 200px;
-  justify-self: end;
-}
-.logo img {
-  width: 100%; /* Makes it take the full column width */
-  height: auto; /* Maintains aspect ratio */
-  max-width: 100%; /* Ensures it doesn't exceed container width */
-  max-height: 100%; /* Ensures it doesn't exceed container height */
-  -o-object-fit: contain;
-     object-fit: contain;
-  transform: translateY(-55%);
-}
-
 .arrow {
   color: #C62E3C;
   padding: 10px;
@@ -171,7 +152,7 @@ p {
 @keyframes fade-in-top {
   from {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
   }
   to {
     opacity: 1;
@@ -279,6 +260,12 @@ h3 {
   -moz-column-count: 2;
        column-count: 2;
 }
+@media (max-width: 1000px) {
+  .column-2 {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}
 
 #programm ul {
   display: flex;
@@ -306,6 +293,14 @@ h3 {
   width: 100px;
   height: 100px;
 }
+@media (max-width: 500px) {
+  #programm ul .programm-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 #panel-bild {
   display: flex;
@@ -326,6 +321,15 @@ h3 {
      object-fit: cover;
   height: 100%;
   width: 100%;
+}
+@media (max-width: 1000px) {
+  #panel-bild {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    flex-direction: column-reverse;
+  }
 }
 
 .tag-container {

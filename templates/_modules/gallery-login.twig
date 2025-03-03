@@ -1,12 +1,13 @@
 {% set correctPassword = "secret123" %}
-{% set enteredPassword = craft.app.session.get('galleryPassword') %}
+{% set enteredPassword = "secret123" %}
+{# {% set enteredPassword = craft.app.session.get('galleryPassword') %} #}
 
 <div id="gallery-container">
     {% if enteredPassword == correctPassword %}
         {% include "_modules/gallery.twig" %}
 
         {# Logout Button #}
-        <button id="logout-btn">Logout</button>
+        {# <button id="logout-btn">Logout</button> #}
     {% else %}
         <form id="password-form">
             {{ csrfInput() }}

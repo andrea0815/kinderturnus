@@ -9,11 +9,10 @@
 		{% endif %}
 
 		{% if entry.email|length %}
-			<a href="mailto:{{entry.email}}">{{ entry.email }}</a>
-		{% endif %}
-	</div>
-
-
-{% endblock %}
-
-{% block scriptblock %}{% endblock %}
+			<a href="mailto:{{entry.email}}">
+				<p>{{ entry.email }}
+				</p>
+			</a>
+		</p>
+	{% endif %}
+</div>{% endblock %}{% block scriptblock %}{% endblock %}

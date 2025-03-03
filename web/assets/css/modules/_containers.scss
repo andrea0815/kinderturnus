@@ -1,11 +1,43 @@
 @use '../utilities/utilities' as u;
+@use '../utilities/mediaquery-library' as m;
 
 body {
     display: grid;
-    grid-template-columns: 2fr minmax(0, 800px) 2fr; 
-    justify-content: center; /* Ensures grid stays centered */
-    background-color: u.$color-background;
+    grid-template-columns: 2fr minmax(0, 800px) 2fr;
+    justify-content: center;
+    position: relative;
+    background-color: u.$color-sand;
+
+    @include m.media('<=tablet') {
+        grid-template-columns: 1fr 90% 1fr;
+    }
 }
+
+body::before {
+    content: "";
+    position: fixed;  // Keep it fixed so it overlays everything
+    inset: 0;
+    pointer-events: none;  // Prevents interference with clicks
+    
+    background: 
+        url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");  // Ensure Sass variables are interpolated
+
+    background-size: cover;
+    mix-blend-mode: multiply;  // Blend the noise with the gradient
+    opacity: 0.25;  // Adjust grain strength
+}
+body::after {
+    content: "";
+    position: fixed;  // Keep it fixed so it overlays everything
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;  // Prevents interference with clicks
+    background: linear-gradient(160deg, rgba(144, 109, 59, 0) 0%, rgb(238, 204, 176) 100%);  // Ensure Sass variables are interpolated
+    background-size: cover;
+    mix-blend-mode: darken;  // Blend the noise with the gradient
+    opacity: 0.50;  // Adjust grain strength
+}
+
 
 
 .wrapper {
@@ -20,11 +52,88 @@ body {
 
 header {
     @include u.flex-row(space-between, baseline);
-    margin: u.$space-5 0 u.$space-6 0;
+    margin: u.$space-5 0 u.$space-5 0;
+    margin-bottom: u.$space-5 + 40;
+    position: relative;
+
+    @include m.media('<=phone') {
+        margin-top: u.$space-4;
+        margin-bottom: u.$space-5;
+    }
+
+    
+.logo-container {
+
+    #logo {
+        grid-column: 1;
+        position: absolute;
+        top: 0;
+        left: -15vw;
+        top: -130%;
+        display: flex;
+        z-index: -1;
+        width: 200px;
+        height: 200px;
+    
+        .rays {
+            animation: logo-rotation 5s infinite ease-in-out;
+            transform-origin: center;
+        }
+    
+        .middle {
+            transform-origin: center;
+            transition: all 1s ease-in-out;
+        }
+    
+        &:hover .middle {
+            transform-origin: center;
+            transform: rotate(180deg);
+    
+        }
+    
+        @keyframes logo-rotation {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+    
+            50% {
+                transform: rotate(5deg) scale(0.95);
+            }
+    
+            100% {
+                transform: rotate(0deg) scale(1);
+            }
+        }
+    
+        @include m.media('<=tablet') {
+           left: 0;
+            z-index: 1;
+        }
+
+        @include m.media('<=phone') {
+            top: -25%;
+            width: 60%;
+        }
+
+        
+    }
 
     .web-title {
         margin-right: u.$space-3;
+        @include m.media('<=tablet') {
+            opacity: 0;
+        }
+
+        @include m.media('<=phone') {
+            display: none;
+        }
     }
+
+    @include m.media('<=tablet') {
+        
+     }
+
+}
 
     nav {
         ul {
@@ -35,9 +144,22 @@ header {
             a {
                 @include u.text-navigation();
                 transition: all .2s ease-in-out;
+                color: u.$color-red-50;
 
                 &:hover {
-                    color: u.$color-red-50;
+                    color: u.$color-red;
+                }
+
+                &.active {
+                    color: u.$color-red;
+                }
+            }
+
+            @include m.media('<=phone') {
+                @include u.flex-column(end, space-between);
+
+                li {
+                    text-align: right;
                 }
             }
         }
@@ -58,8 +180,8 @@ header {
 
 
     .faq-question-container {
-        @include u.flex-row(space-between, center); 
-        
+        @include u.flex-row(space-between, center);
+
         .faq-question {
             cursor: pointer;
             font-size: 18px;
@@ -67,7 +189,7 @@ header {
             position: relative;
             transition: color 0.3s ease-in-out;
             margin-bottom: 0;
-            
+
             &:hover {
                 color: u.$color-red-50;
             }
@@ -87,7 +209,9 @@ header {
         }
     }
 
-
+    @include m.media('<=phone') {
+        padding: u.$space-4;
+    }
 
 }
 
@@ -110,7 +234,7 @@ header {
         transition: max-height 0.4s ease-in-out;
         color: #444;
         box-sizing: border-box;
-       
+
     }
 }
 
@@ -119,7 +243,8 @@ form {
     margin: u.$space-5 0;
     gap: u.$space-4;
 
-    input, button {
+    input,
+    button {
         max-width: 90%;
         width: 200px;
         box-sizing: border-box;
@@ -131,11 +256,12 @@ form {
         border-radius: u.$radius-2;
         border: 2px solid u.$color-red;
         background-color: transparent;
-       
+
 
         :active {
             border-color: u.$color-red-50;
         }
+
         :focus {
             border-color: u.$color-red-50;
         }
@@ -152,7 +278,7 @@ form {
         &:hover {
             background-color: u.$color-red-50;
             color: u.$color-white;
-            
+
         }
     }
 }

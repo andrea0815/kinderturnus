@@ -1,4 +1,6 @@
 @use '../utilities/utilities' as u;
+@use '../utilities/mediaquery-library' as m;
+
 
 .slider {
     position: relative;
@@ -47,11 +49,19 @@
         &.left-arrow {
             left: 0;
             transform: translateX(-200%);
+
+            @include m.media('<=tablet') {
+                transform: translateX(10%);
+            }
         }
 
         &.right-arrow {
             right: 0;
             transform: translateX(200%) rotate(180deg);
+
+            @include m.media('<=tablet') {
+                transform: translateX(-10%) rotate(180deg);
+            }
         }
 
         svg {
@@ -67,6 +77,8 @@
                 margin-right: 10px;
             }
         }
+
+       
     }
 
     .dots-container {

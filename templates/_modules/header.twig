@@ -1,8 +1,11 @@
 <header>
-	{% if globalsGeneral.websiteTitle|length %}
-		<h1 class="web-title">
-			{{ globalsGeneral.websiteTitle }}
-		</h1>
-	{% endif %}
+	<div class="logo-container">
+		{% include "_components/logo.twig" %}
+		{% if globalsGeneral.websiteTitle|length %}
+			<h1 class="web-title">
+				{{ globalsGeneral.websiteTitle }}
+			</h1>
+			{% endif %}
+		</div>
 	{% include "_modules/nav.twig" %}
 </header>

@@ -1,15 +1,16 @@
 <nav>
-	{% if globalsNav.navigation|length %}
-		<ul>
-			{% for navItem in globalsNav.navigation %}
-				<li>
-					<a
-						href="{{navItem.url}}"
-						class="{% if craft.app.request.getSegment(1) == 'contact' %}active{% endif %}">
-						{{navItem.title}}
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-	{% endif %}
+    {% if globalsNav.navigation|length %}
+        <ul>
+            {% for navItem in globalsNav.navigation %}
+                {% set cleanNavUrl = navItem.url|replace({ (siteUrl()): '' }) %}
+                {% set isActive = (craft.app.request.getSegment(1) == cleanNavUrl) %}
+
+                <li>
+                    <a href="{{ navItem.url }}" class="{% if isActive %}active{% endif %}">
+                        {{ navItem.title }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 </nav>
