@@ -3,7 +3,7 @@
         <div class="slider-container">
             {% for image in panel.sliderBilder.all() %}
                 <div class="slide {% if loop.first %}active{% endif %}" data-index="{{ loop.index0 }}">
-                    <img src="{{ image.getUrl() }}" alt="{{ image.altText }}" class="img-rounded">
+                    <img src="{{ image.getUrl('') }}" alt="{{ image.altText }}" class="img-rounded">
                 </div>
             {% endfor %}
         </div>
