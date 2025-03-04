@@ -1,4 +1,4 @@
-dateModified: 1740989074
+dateModified: 1741084116
 email:
   fromEmail: base@left.studio
   fromName: master-project
@@ -10,7 +10,7 @@ fs:
     settings:
       path: volumes/data
     type: craft\fs\Local
-    url: '@webassets/volumes/data'
+    url: /volumes/data
   images:
     hasUrls: true
     name: Images
@@ -24,14 +24,14 @@ fs:
     settings:
       path: volumes/transforms
     type: craft\fs\Local
-    url: '@webassets/volumes/transforms'
+    url: /volumes/transforms
   videos:
     hasUrls: true
     name: Videos
     settings:
       path: volumes/videos
     type: craft\fs\Local
-    url: '@webassets/volumes/videos'
+    url: /volumes/videos
 meta:
   __names__:
     0c017e24-6889-49f0-bdd2-058a139c9f1d: Data # Data

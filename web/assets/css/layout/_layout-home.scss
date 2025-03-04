@@ -8,8 +8,6 @@
         gap: u.$space-4;
         margin-top: u.$space-5;
 
-        @include u.element-rotations($element: "li", $angle: 4);
-
         .programm-item {
             @include u.flex-row(space-between, center);
             gap: u.$space-4;

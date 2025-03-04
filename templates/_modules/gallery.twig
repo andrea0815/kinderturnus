@@ -17,7 +17,7 @@
                 {% if tag.imageGallery|length %}
                     <div class="image-container accordion-content">
                         {% for image in tag.imageGallery.all() %}
-                            <img src="{{ image.getUrl() }}" alt="{{ image.altText }}">
+                            <img src="{{ image.getUrl('image1600x') }}" alt="{{ image.altText }}">
                         {% endfor %}
                     </div>
                 {% endif %}

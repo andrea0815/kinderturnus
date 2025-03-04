@@ -77,7 +77,7 @@
 						{% if panel.image|length %}
 							{% set image = panel.image.one %}
 							<div class="img-container">
-								<img src="{{ image.getUrl() }}" alt="{{ image.altText }}" class="img-rounded">
+								<img src="{{ image.getUrl('image800x') }}" alt="{{ image.altText }}" class="img-rounded">
 							</div>
 						{% endif %}
 					</div>
@@ -100,7 +100,7 @@
 									<li class="programm-item">
 										{% if punkt.image|length %}
 											{% set image = punkt.image.one %}
-											<img src="{{ image.getUrl() }}" alt="{{ image.altText }}">
+											<img src="{{ image.getUrl('thumbnail') }}" alt="{{ image.altText }}">
 										{% endif %}
 										{% if punkt.textBlock|length %}
 											{{ punkt.textBlock }}
