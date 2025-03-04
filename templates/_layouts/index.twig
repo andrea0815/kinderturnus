@@ -100,7 +100,7 @@
 									<li class="programm-item">
 										{% if punkt.image|length %}
 											{% set image = punkt.image.one %}
-											<img src="{{ image.getUrl('thumbnail') }}" alt="{{ image.altText }}">
+											<img src="{{ image.getUrl() }}" alt="{{ image.altText }}">
 										{% endif %}
 										{% if punkt.textBlock|length %}
 											{{ punkt.textBlock }}

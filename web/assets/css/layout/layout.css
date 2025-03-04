@@ -303,146 +303,6 @@ p {
   gap: 20px;
   margin-top: 50px;
 }
-#programm ul li:nth-child(1) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(1):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(2) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(2):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(3) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(3):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(4) {
-  transform: rotate(1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(4):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(5) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(5):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(6) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(6):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(7) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(7):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(8) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(8):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(9) {
-  transform: rotate(0deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(9):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(10) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(10):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(11) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(11):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(12) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(12):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(13) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(13):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(14) {
-  transform: rotate(1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(14):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(15) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(15):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(16) {
-  transform: rotate(1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(16):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(17) {
-  transform: rotate(1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(17):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(18) {
-  transform: rotate(2deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(18):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(19) {
-  transform: rotate(1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(19):hover {
-  transform: rotate(0deg);
-}
-#programm ul li:nth-child(20) {
-  transform: rotate(-1deg);
-  transition: all 0.2s ease-in-out;
-}
-#programm ul li:nth-child(20):hover {
-  transform: rotate(0deg);
-}
 #programm ul .programm-item {
   display: flex;
   flex-direction: row;
@@ -458,8 +318,8 @@ p {
   background-color: #F8F2E4;
 }
 #programm ul .programm-item img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
 }
 @media (max-width: 500px) {
   #programm ul .programm-item {
@@ -507,49 +367,49 @@ p {
   margin-top: 30px;
 }
 .tag-container ul li:nth-child(1) {
-  transform: rotate(-1deg);
+  transform: rotate(2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(1):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(2) {
-  transform: rotate(0deg);
+  transform: rotate(2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(2):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(3) {
-  transform: rotate(0deg);
+  transform: rotate(1deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(3):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(4) {
-  transform: rotate(1deg);
+  transform: rotate(3deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(4):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(5) {
-  transform: rotate(3deg);
+  transform: rotate(-1deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(5):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(6) {
-  transform: rotate(0deg);
+  transform: rotate(3deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(6):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(7) {
-  transform: rotate(-2deg);
+  transform: rotate(1deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(7):hover {
@@ -563,35 +423,35 @@ p {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(9) {
-  transform: rotate(3deg);
+  transform: rotate(-2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(9):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(10) {
-  transform: rotate(2deg);
+  transform: rotate(-2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(10):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(11) {
-  transform: rotate(-1deg);
+  transform: rotate(2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(11):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(12) {
-  transform: rotate(-2deg);
+  transform: rotate(0deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(12):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(13) {
-  transform: rotate(0deg);
+  transform: rotate(-2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(13):hover {
@@ -605,7 +465,7 @@ p {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(15) {
-  transform: rotate(0deg);
+  transform: rotate(2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(15):hover {
@@ -619,7 +479,7 @@ p {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(17) {
-  transform: rotate(2deg);
+  transform: rotate(3deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(17):hover {
@@ -633,14 +493,14 @@ p {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(19) {
-  transform: rotate(-2deg);
+  transform: rotate(0deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(19):hover {
   transform: rotate(0deg);
 }
 .tag-container ul li:nth-child(20) {
-  transform: rotate(-2deg);
+  transform: rotate(2deg);
   transition: all 0.2s ease-in-out;
 }
 .tag-container ul li:nth-child(20):hover {
