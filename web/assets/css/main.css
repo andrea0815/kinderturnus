@@ -28,109 +28,6 @@
   align-items: center;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Dosis";
-  text-decoration: none;
-  color: rgb(56, 52, 45);
-  line-height: 1.4;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Dosis";
-  color: #C62E3C;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  cursor: pointer;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-button {
-  all: unset;
-  display: inline-block;
-  cursor: pointer;
-  background-color: #C62E3C;
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  transition: all 0.2s ease-in-out;
-}
-button:hover {
-  background-color: #9e2530;
-}
-
-h2,
-h3,
-h4,
-h5,
-p {
-  animation-name: fade-in-top;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.loader {
-  background-color: rgb(255, 255, 255);
-  z-index: 100;
-  width: 100vw;
-  height: 100dvh;
-  position: fixed;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation-name: none;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.arrow {
-  color: #C62E3C;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-  transition: all 0.5s ease-in-out;
-  display: inline-block;
-}
-.arrow svg {
-  height: 100%;
-  margin-right: 5px;
-  transition: all 0.3s ease-in-out;
-}
-.arrow.right {
-  transform: rotate(180deg);
-}
-.arrow.down {
-  transform: rotate(270deg);
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -227,6 +124,20 @@ p {
     transform: translateY(100%);
   }
 }
+@keyframes loadingDots {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
 h1 {
   font-size: 2.5rem;
   font-family: "Dosis";
@@ -265,6 +176,123 @@ h3 {
     -moz-column-count: 1;
          column-count: 1;
   }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Dosis";
+  text-decoration: none;
+  color: rgb(56, 52, 45);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dosis";
+  color: #C62E3C;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #C62E3C;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #9e2530;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  animation-name: fade-in-top;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.loader {
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader .loader-text {
+  font-size: 1.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+}
+.loader .loader-text::after {
+  content: ".";
+  font-size: 1.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+  animation: loadingDots 1s infinite steps(1);
+}
+
+.arrow {
+  color: #C62E3C;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+.arrow svg {
+  height: 100%;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.arrow.right {
+  transform: rotate(180deg);
+}
+.arrow.down {
+  transform: rotate(270deg);
 }
 
 body {
@@ -333,9 +361,10 @@ header .logo-container #logo {
   left: -15vw;
   top: -130%;
   display: flex;
-  z-index: -1;
   width: 200px;
   height: 200px;
+  mix-blend-mode: multiply;
+  filter: brightness(1.05);
 }
 header .logo-container #logo .rays {
   animation: logo-rotation 5s infinite ease-in-out;
@@ -393,6 +422,146 @@ header nav ul {
   /* Accessing the mixin through namespace */
   gap: 15px;
 }
+header nav ul li:nth-child(1) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(1):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(2) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(2):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(3) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(3):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(4) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(4):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(5) {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(5):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(6) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(6):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(7) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(7):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(8) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(8):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(9) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(9):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(10) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(10):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(11) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(11):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(12) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(12):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(13) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(13):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(14) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(14):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(15) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(15):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(16) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(16):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(17) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(17):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(18) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(18):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(19) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(19):hover {
+  transform: rotate(0deg);
+}
+header nav ul li:nth-child(20) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+header nav ul li:nth-child(20):hover {
+  transform: rotate(0deg);
+}
 header nav ul a {
   font-size: 1.2rem;
   font-family: "Dosis";
@@ -422,7 +591,7 @@ header nav ul a.active {
 }
 
 .panel {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 30px;
   padding-bottom: 30px;
   border-radius: 15px;
@@ -447,6 +616,13 @@ header nav ul a.active {
 }
 .panel .faq-question-container .faq-question:hover {
   color: rgba(198, 46, 61, 0.5);
+}
+.panel .faq-answer ul {
+  list-style-type: disc;
+  padding-left: 30px;
+}
+.panel .faq-answer ul li {
+  margin-bottom: 5px;
 }
 .panel .faq-answer p {
   padding-top: 10px;
@@ -512,6 +688,27 @@ form button {
 form button:hover {
   background-color: rgba(198, 46, 61, 0.5);
   color: rgb(255, 255, 255);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.lightbox.active {
+  display: flex;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: black;
 }
 
 .slider {
@@ -610,13 +807,153 @@ form button:hover {
   gap: 20px;
   margin-top: 50px;
 }
+#programm ul li:nth-child(1) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(1):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(2) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(2):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(3) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(3):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(4) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(4):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(5) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(5):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(6) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(6):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(7) {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(7):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(8) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(8):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(9) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(9):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(10) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(10):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(11) {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(11):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(12) {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(12):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(13) {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(13):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(14) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(14):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(15) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(15):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(16) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(16):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(17) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(17):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(18) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(18):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(19) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(19):hover {
+  transform: rotate(0deg);
+}
+#programm ul li:nth-child(20) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+#programm ul li:nth-child(20):hover {
+  transform: rotate(0deg);
+}
 #programm ul .programm-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  background-color: #F1E9D5;
+  background-color: rgb(235, 223, 204);
   border-radius: 15px;
   padding: 20px;
   transition: all 0.2s ease-in-out;
@@ -673,18 +1010,159 @@ form button:hover {
 .tag-container ul {
   margin-top: 30px;
 }
+.tag-container ul li:nth-child(1) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(1):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(2) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(2):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(3) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(3):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(4) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(4):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(5) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(5):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(6) {
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(6):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(7) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(7):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(8) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(8):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(9) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(9):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(10) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(10):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(11) {
+  transform: rotate(1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(11):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(12) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(12):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(13) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(13):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(14) {
+  transform: rotate(-1deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(14):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(15) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(15):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(16) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(16):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(17) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(17):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(18) {
+  transform: rotate(2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(18):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(19) {
+  transform: rotate(-2deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(19):hover {
+  transform: rotate(0deg);
+}
+.tag-container ul li:nth-child(20) {
+  transform: rotate(3deg);
+  transition: all 0.2s ease-in-out;
+}
+.tag-container ul li:nth-child(20):hover {
+  transform: rotate(0deg);
+}
 .tag-container ul li {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 20px;
   padding: 10px 20px;
-  background-color: #F1E9D5;
+  background-color: rgb(235, 223, 204);
   border-radius: 50px;
   transition: all 0.2s ease-in-out;
   font-weight: 600;
 }
 .tag-container ul li:hover {
   background-color: #F8F2E4;
+  transform: rotate(0deg);
 }
 
 .gallery {
@@ -721,4 +1199,8 @@ form button:hover {
 .image-container img {
   height: 150px;
   width: auto;
+  transition: all 0.3s ease-in-out;
+}
+.image-container img:hover {
+  filter: brightness(1.1);
 }/*# sourceMappingURL=main.css.map */

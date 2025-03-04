@@ -79,3 +79,18 @@ object-position: center;
 @mixin img-rounded() {
     border-radius: var.$radius-2;
 }
+
+@mixin element-rotations($element: "li", $angle: 6) {
+    @for $i from 1 through 20 {
+        #{$element}:nth-child(#{$i}) {
+            transform: rotate(#{(random($angle) - $angle*0.5)}deg); // Random rotation between -10 and 10 degrees
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
+
+

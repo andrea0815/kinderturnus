@@ -15,27 +15,28 @@ body {
 
 body::before {
     content: "";
-    position: fixed;  // Keep it fixed so it overlays everything
+    position: fixed; // Keep it fixed so it overlays everything
     inset: 0;
-    pointer-events: none;  // Prevents interference with clicks
-    
-    background: 
-        url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");  // Ensure Sass variables are interpolated
+    pointer-events: none; // Prevents interference with clicks
+
+    background:
+        url("data:image/svg+xml;charset=UTF-8,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"); // Ensure Sass variables are interpolated
 
     background-size: cover;
-    mix-blend-mode: multiply;  // Blend the noise with the gradient
-    opacity: 0.25;  // Adjust grain strength
+    mix-blend-mode: multiply; // Blend the noise with the gradient
+    opacity: 0.25; // Adjust grain strength
 }
+
 body::after {
     content: "";
-    position: fixed;  // Keep it fixed so it overlays everything
+    position: fixed; // Keep it fixed so it overlays everything
     inset: 0;
     z-index: 100;
-    pointer-events: none;  // Prevents interference with clicks
-    background: linear-gradient(160deg, rgba(144, 109, 59, 0) 3%, rgb(244, 176, 120) 100%);  // Ensure Sass variables are interpolated
+    pointer-events: none; // Prevents interference with clicks
+    background: linear-gradient(160deg, rgba(144, 109, 59, 0) 3%, rgb(244, 176, 120) 100%); // Ensure Sass variables are interpolated
     background-size: cover;
-    mix-blend-mode: darken;  // Blend the noise with the gradient
-    opacity: 0.5;  // Adjust grain strength
+    mix-blend-mode: darken; // Blend the noise with the gradient
+    opacity: 0.5; // Adjust grain strength
 }
 
 
@@ -61,85 +62,87 @@ header {
         margin-bottom: u.$space-5;
     }
 
-    
-.logo-container {
 
-    #logo {
-        grid-column: 1;
-        position: absolute;
-        top: 0;
-        left: -15vw;
-        top: -130%;
-        display: flex;
-        z-index: -1;
-        width: 200px;
-        height: 200px;
-    
-        .rays {
-            animation: logo-rotation 5s infinite ease-in-out;
-            transform-origin: center;
-        }
-    
-        .middle {
-            transform-origin: center;
-            transition: all 1s ease-in-out;
-        }
-    
-        &:hover .middle {
-            transform-origin: center;
-            transform: rotate(180deg);
-    
-        }
-    
-        @keyframes logo-rotation {
-            0% {
-                transform: rotate(0deg) scale(1);
+    .logo-container {
+
+        #logo {
+            grid-column: 1;
+            position: absolute;
+            top: 0;
+            left: -15vw;
+            top: -130%;
+            display: flex;
+            width: 200px;
+            height: 200px;
+            mix-blend-mode: multiply;
+            filter: brightness(1.05);
+
+            .rays {
+                animation: logo-rotation 5s infinite ease-in-out;
+                transform-origin: center;
             }
-    
-            50% {
-                transform: rotate(5deg) scale(0.95);
+
+            .middle {
+                transform-origin: center;
+                transition: all 1s ease-in-out;
             }
-    
-            100% {
-                transform: rotate(0deg) scale(1);
+
+            &:hover .middle {
+                transform-origin: center;
+                transform: rotate(180deg);
+
             }
-        }
-    
-        @include m.media('<=tablet') {
-           left: 0;
-            z-index: 1;
+
+            @keyframes logo-rotation {
+                0% {
+                    transform: rotate(0deg) scale(1);
+                }
+
+                50% {
+                    transform: rotate(5deg) scale(0.95);
+                }
+
+                100% {
+                    transform: rotate(0deg) scale(1);
+                }
+            }
+
+            @include m.media('<=tablet') {
+                left: 0;
+                z-index: 1;
+            }
+
+            @include m.media('<=phone') {
+                top: -25%;
+                width: 60%;
+            }
+
+
         }
 
-        @include m.media('<=phone') {
-            top: -25%;
-            width: 60%;
+        .web-title {
+            margin-right: u.$space-3;
+
+            @include m.media('<=tablet') {
+                opacity: 0;
+            }
+
+            @include m.media('<=phone') {
+                display: none;
+            }
         }
 
-        
+        @include m.media('<=tablet') {}
+
     }
-
-    .web-title {
-        margin-right: u.$space-3;
-        @include m.media('<=tablet') {
-            opacity: 0;
-        }
-
-        @include m.media('<=phone') {
-            display: none;
-        }
-    }
-
-    @include m.media('<=tablet') {
-        
-     }
-
-}
 
     nav {
         ul {
             @include u.flex-row(end, space-between);
             /* Accessing the mixin through namespace */
             gap: u.$gap-3;
+
+            @include u.element-rotations($element: "li", $angle: 6);
 
             a {
                 @include u.text-navigation();
@@ -168,7 +171,7 @@ header {
 }
 
 .panel {
-    background-color: u.$color-white-50;
+    background-color: u.$color-white-70;
     padding: u.$space-4-5;
     padding-bottom: u.$space-4-5;
     border-radius: u.$radius-2;
@@ -198,16 +201,24 @@ header {
 
 
     .faq-answer {
-        // max-height: 0;
-        // overflow: hidden;
-        // transition: max-height 0.4s ease-in-out;
-        // color: #444;
-        // box-sizing: border-box;
+        ul {
+            list-style-type: disc; // Set bullet points as circles
+            padding-left: u.$space-4-5; // Indentation for the list
+
+            li {
+                margin-bottom: u.$space-2;
+            }
+        }
 
         p {
             padding-top: u.$space-3;
         }
+
     }
+
+
+
+
 
     @include m.media('<=phone') {
         padding: u.$space-4;
@@ -280,5 +291,27 @@ form {
             color: u.$color-white;
 
         }
+    }
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background-color: u.$color-white-50;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+    &.active {
+        display: flex;
+    }
+
+    img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+        background-color: black;
     }
 }

@@ -1,5 +1,7 @@
 @use 'variables' as var;
 @use 'utility-classes' as util;
+@use 'animations' as ani;
+@use 'typo' as t;
 @use "sass:color";
 @use '../utilities/mediaquery-library' as m;
 
@@ -85,7 +87,16 @@ p {
     z-index: 100;
     @include util.size-full-screen(fixed);
     @include util.flex-center;
-    @include util.animation($name: none, $duration: var.$timing-500);
+
+    .loader-text {
+       @include t.text-h2();
+      
+        &::after {
+          content: ".";
+          @include t.text-h2();
+          animation: loadingDots 1s infinite steps(1);
+        }
+      }
 }
 
 .arrow {

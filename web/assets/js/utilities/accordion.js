@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
             // Close all other answers
             document.querySelectorAll(".accordion-content").forEach((p) => {
                 console.log(p);
+
+                
                 
                 if (p !== content) {
                     p.style.maxHeight = null;

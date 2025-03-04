@@ -28,109 +28,6 @@
   align-items: center;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 16px;
-  font-family: "Dosis";
-  text-decoration: none;
-  color: rgb(56, 52, 45);
-  line-height: 1.4;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Dosis";
-  color: #C62E3C;
-}
-
-ul,
-ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  cursor: pointer;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-button {
-  all: unset;
-  display: inline-block;
-  cursor: pointer;
-  background-color: #C62E3C;
-  color: rgb(255, 255, 255);
-  padding: 10px 20px;
-  transition: all 0.2s ease-in-out;
-}
-button:hover {
-  background-color: #9e2530;
-}
-
-h2,
-h3,
-h4,
-h5,
-p {
-  animation-name: fade-in-top;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.loader {
-  background-color: rgb(255, 255, 255);
-  z-index: 100;
-  width: 100vw;
-  height: 100dvh;
-  position: fixed;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation-name: none;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-.arrow {
-  color: #C62E3C;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 50px;
-  width: 40px;
-  height: 40px;
-  transition: all 0.5s ease-in-out;
-  display: inline-block;
-}
-.arrow svg {
-  height: 100%;
-  margin-right: 5px;
-  transition: all 0.3s ease-in-out;
-}
-.arrow.right {
-  transform: rotate(180deg);
-}
-.arrow.down {
-  transform: rotate(270deg);
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -227,6 +124,20 @@ p {
     transform: translateY(100%);
   }
 }
+@keyframes loadingDots {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
 h1 {
   font-size: 2.5rem;
   font-family: "Dosis";
@@ -265,4 +176,121 @@ h3 {
     -moz-column-count: 1;
          column-count: 1;
   }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Dosis";
+  text-decoration: none;
+  color: rgb(56, 52, 45);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Dosis";
+  color: #C62E3C;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+button {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #C62E3C;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #9e2530;
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  animation-name: fade-in-top;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.loader {
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  width: 100vw;
+  height: 100dvh;
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader .loader-text {
+  font-size: 1.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+}
+.loader .loader-text::after {
+  content: ".";
+  font-size: 1.5rem;
+  font-family: "Dosis";
+  text-decoration: none;
+  line-height: 1.4;
+  color: #C62E3C;
+  font-weight: 700;
+  animation: loadingDots 1s infinite steps(1);
+}
+
+.arrow {
+  color: #C62E3C;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+}
+.arrow svg {
+  height: 100%;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.arrow.right {
+  transform: rotate(180deg);
+}
+.arrow.down {
+  transform: rotate(270deg);
 }/*# sourceMappingURL=utilities.css.map */

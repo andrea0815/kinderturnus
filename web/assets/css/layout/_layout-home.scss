@@ -8,6 +8,8 @@
         gap: u.$space-4;
         margin-top: u.$space-5;
 
+        @include u.element-rotations($element: "li", $angle: 4);
+
         .programm-item {
             @include u.flex-row(space-between, center);
             gap: u.$space-4;
@@ -66,6 +68,9 @@
 
     ul {
         margin-top: u.$space-4-5;
+
+        @include u.element-rotations($element: "li", $angle: 6);
+
         li {
             display: inline-block;
             margin-right: u.$space-3;
@@ -78,7 +83,10 @@
 
             &:hover {
                 background-color: u.$color-sand;
+                transform: rotate(0deg);
             }
+
+            
         }
     }
 
