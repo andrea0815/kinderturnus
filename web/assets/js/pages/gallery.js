@@ -1,13 +1,30 @@
-const images = document.querySelectorAll('.gallery img');
-const lightbox = document.querySelectorAll('.lightbox');
+document.addEventListener("DOMContentLoaded", () => {
+    const lightbox = document.querySelector('.lightbox');
+    const images = document.querySelectorAll('.gallery img'); // Replace with correct class
 
-images.forEach(image => {
-    image.addEventListener('click', () => {
-        lightbox.classList.add('active');
-        lightbox.querySelector('img').src = image.src;
+    if (!lightbox) {
+        console.error("Lightbox element not found!");
+        return;
+    }
+
+    if (!images.length) {
+        console.error("No images found!");
+        return;
+    }
+
+    images.forEach(image => {
+        image.addEventListener('click', () => {
+            lightbox.classList.add('active');
+            const lightboxImg = lightbox.querySelector('img');
+            if (lightboxImg) {
+                lightboxImg.src = image.src;
+            } else {
+                console.error("No <img> inside lightbox!");
+            }
+        });
     });
-});
 
-lightbox.addEventListener('click', () => {
-    lightbox.classList.remove('active');
+    lightbox.addEventListener('click', () => {
+        lightbox.classList.remove('active');
+    });
 });

@@ -297,7 +297,7 @@ form {
 .lightbox {
     position: fixed;
     inset: 0;
-    background-color: u.$color-white-50;
+    background-color: u.$color-white-70;
     display: none;
     justify-content: center;
     align-items: center;
@@ -312,6 +312,5 @@ form {
         max-width: 90%;
         max-height: 90%;
         object-fit: contain;
-        background-color: black;
     }
 }
